@@ -1,3 +1,16 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+home:
+    path: /
+    controller: App\Controller\HomeController::indexAction
+
+doctors:
+    path: /doctors
+    controller: App\Controller\DoctorsController::indexAction
+
+patients:
+    path: /patients
+    controller: App\Controller\PatientsController::indexAction
+
+doctor_schedule:
+    path: /doctor_schedule/{doctor_id}
+    controller: App\Controller\DoctorsController::scheduleAction
+    methods:    POST|HEAD

@@ -2,11 +2,80 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        {#Load bootstrap CDN#}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    <body class="bg-light">
+        {% block body %}
+
+            {% block navBar %}
+            {#Navigation bar#}
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="{{ path('home') }}">
+                    <img src="{{ asset('img/CallDoc.png') }}">
+                    CallDoc
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('home') }}">Home<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_PATIENT' ) %}
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('doctors') }}">Doctors<span class="sr-only">(current)</span></a>
+                        </li>
+                        {% endif %}
+
+                        {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_DOCTOR' ) %}
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('patients') }}">Patients<span class="sr-only">(current)</span></a>
+                        </li>
+                        {% endif %}
+
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0" style="color: white;">
+                        {% if not app.user %}
+                        <span>Navigate in the site ?</span>
+                        <a class="btn btn-link" style="color: white;" href="{{ path('app_register') }}">Sign up</a>
+                        <a class="btn btn-link" style="color: white;" href="{{ path('app_login') }}">Sign in</a>
+                        {% else %}
+                        <span>Comeback soon, {{ app.user.getFirstName() }} ?</span>
+                        <a class="btn btn-link" style="color: white;" href="{{ path('app_logout') }}">Sign out</a>
+                        {% endif %}
+                    </form>
+                </div>
+            </nav>
+            {% endblock %}
+
+            {% block sitePresentation %}
+            {#Site presentation#}
+            <div class="jumbotron bg-light">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is the CallDoc web video consultaion site.</p>
+                <hr class="my-4">
+                <p>Make it quicker, simpler and fancier !</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+            {% endblock %}
+
+        {% endblock %}
+
+        {#Load Javascript & JQuery CDNs#}
+        {% block javascripts %}
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+        {% endblock %}
     </body>
 </html>

@@ -1,0 +1,103 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Sign up{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+    {% form_theme registrationForm 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+    {% block navBar %}
+        {{ parent() }}
+    {% endblock %}
+
+    {{ form_start(registrationForm) }}
+
+    <div class="jumbotron bg-light">
+        <table class="mx-auto">
+            <tr>
+                <td>{{ form_label(registrationForm.first_name) }}</td>
+                <td>{{ form_errors(registrationForm.first_name) }}</td>
+                <td>{{ form_widget(registrationForm.first_name) }}</td>
+                <td style="width: 10%;"></td>
+                <td>{{ form_label(registrationForm.last_name) }}</td>
+                <td>{{ form_errors(registrationForm.last_name) }}</td>
+                <td>{{ form_widget(registrationForm.last_name) }}</td>
+            </tr>
+            <tr>
+                <td>{{ form_label(registrationForm.birth_date) }}</td>
+                <td>{{ form_errors(registrationForm.birth_date) }}</td>
+                <td>{{ form_widget(registrationForm.birth_date) }}</td>
+                <td style="width: 10%;"></td>
+                <td>{{ form_label(registrationForm.phone_number) }}</td>
+                <td>{{ form_errors(registrationForm.phone_number) }}</td>
+                <td>{{ form_widget(registrationForm.phone_number) }}</td>
+            </tr>
+            <tr>
+                <td>{{ form_label(registrationForm.email) }}</td>
+                <td>{{ form_errors(registrationForm.email) }}</td>
+                <td colspan="5">{{ form_widget(registrationForm.email) }}</td>
+            </tr>
+            <tr>
+                <td>{{ form_label(registrationForm.role) }}</td>
+                <td>{{ form_errors(registrationForm.role) }}</td>
+                <td>{{ form_widget(registrationForm.role) }}</td>
+                <td style="width: 10%;"></td>
+                <td>{{ form_label(registrationForm.speciality) }}</td>
+                <td>{{ form_errors(registrationForm.speciality) }}</td>
+                <td>{{ form_widget(registrationForm.speciality) }}</td>
+            </tr>
+            <tr>
+                <td>{{ form_label(registrationForm.plainPassword.first) }}</td>
+                <td>{{ form_errors(registrationForm.plainPassword.first) }}</td>
+                <td>{{ form_widget(registrationForm.plainPassword.first) }}</td>
+                <td style="width: 10%;"></td>
+                <td>{{ form_label(registrationForm.plainPassword.second) }}</td>
+                <td>{{ form_errors(registrationForm.plainPassword.second) }}</td>
+                <td>{{ form_widget(registrationForm.plainPassword.second) }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>{{ form_errors(registrationForm.agreeTerms) }}</td>
+                <td style="text-align: right;">{{ form_widget(registrationForm.agreeTerms) }}</td>
+                <td style="text-align: left;">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                        [ Read ]
+                    </button>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="7"><button class="btn btn-primary" type="submit" style="margin-top: 5%;">Sign up</button></td>
+            </tr>
+        </table>
+    </div>
+
+    {{ form_end(registrationForm) }}
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Terms</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Bla bla bla ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

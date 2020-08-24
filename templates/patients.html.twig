@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Patients{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block body %}
+    {% block navBar %}
+        {{ parent() }}
+    {% endblock %}
+    <div class="jumbotron bg-light">
+
+        {{ knp_pagination_render(patients) }}
+
+        <table class="table table-active table-sm">
+            <thead>
+            <tr class="table-dark">
+                <th scope="col">Patient</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Dates</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for patient in patients %}
+                <tr>
+                    <td scope="row">{{ patient.getFirstName|e }} {{ patient.getLastName|e }}</td>
+                    <td>{{ patient.getPhoneNumber|e }}</td>
+                    <td>{{ patient.getEmail|e }}</td>
+                    <td>Dates</td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

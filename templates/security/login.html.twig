@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sign in{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block body %}
+{% block navBar %}
+    {{ parent() }}
+{% endblock %}
+<div class="jumbotron bg-light">
+    <form method="post">
+        <table class="mx-auto" style="width: 35%;">
+
+            {% if error %}
+                <tr>
+                    <td colspan="2">
+                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    </td>
+                </tr>
+            {% endif %}
+
+            <tr>
+                <td>
+                    <label for=""></label>
+                </td>
+                <td>
+                    <label for=""></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputEmail">Email</label>
+                </td>
+                <td>
+                    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for=""></label>
+                </td>
+                <td>
+                    <label for=""></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputPassword">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="inputPassword" class="form-control" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for=""></label>
+                </td>
+                <td>
+                    <label for=""></label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for=""></label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="_remember_me"> Remember me
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for=""></label>
+                </td>
+                <td>
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for=""></label>
+                </td>
+                <td>
+                    <button class="btn btn-lg btn-primary" type="submit">
+                        Sign in
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</div>
+{% endblock %}
