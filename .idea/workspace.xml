@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52d38ce6-c912-4c6f-9dec-af992766e063" name="Default" comment="24/08/2020">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/AskForConsultation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/PendingConsultatio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/migrations/Version20200824201743.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/migrations/Version20200830171538.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/ConsultationController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/ConsultationFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/consultation_confirmation.html.twig" />
+    <list default="true" id="52d38ce6-c912-4c6f-9dec-af992766e063" name="Default" comment="31/08/2020">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.yaml" afterPath="$PROJECT_DIR$/config/routes.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/DoctorsController.php" afterPath="$PROJECT_DIR$/src/Controller/DoctorsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/PatientsController.php" afterPath="$PROJECT_DIR$/src/Controller/PatientsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Consultation.php" afterPath="$PROJECT_DIR$/src/Entity/Consultation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/User.php" afterPath="$PROJECT_DIR$/src/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repository/ConsultationRepository.php" afterPath="$PROJECT_DIR$/src/Repository/ConsultationRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/doctor_schedule.html.twig" afterPath="$PROJECT_DIR$/templates/doctor_schedule.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/doctors.html.twig" afterPath="$PROJECT_DIR$/templates/doctors.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/patients.html.twig" afterPath="$PROJECT_DIR$/templates/patients.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,6 +89,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Mekki Lakhdher &lt;mlakhdher@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -398,7 +386,7 @@
       <workItem from="1598563578197" duration="1560000" />
       <workItem from="1598631203072" duration="5482000" />
       <workItem from="1598804553830" duration="11718000" />
-      <workItem from="1598894906679" duration="1038000" />
+      <workItem from="1598894906679" duration="1204000" />
     </task>
     <task id="LOCAL-00001" summary="24/08/2020">
       <created>1598303508962</created>
@@ -407,11 +395,18 @@
       <option name="project" value="LOCAL" />
       <updated>1598303508962</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="31/08/2020">
+      <created>1598895994141</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598895994141</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99921000" />
+    <option name="totallyTimeSpent" value="100087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -445,7 +440,8 @@
   <component name="VcsManagerConfiguration">
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="24/08/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="24/08/2020" />
+    <MESSAGE value="31/08/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="31/08/2020" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -645,6 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="1511" column="20" lean-forward="false" selection-start-line="1511" selection-start-column="20" selection-end-line="1511" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -688,6 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -695,6 +693,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-248">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1598807738727" expanded="true" signature="503:553" ph="ALTER TABLE consultation... " />
+            <marker date="1598807738727" expanded="true" signature="724:762" ph="ALTER TABLE consultation... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,6 +704,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-679">
           <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -709,6 +712,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-308">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="98" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
