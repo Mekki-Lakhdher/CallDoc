@@ -47,4 +47,6 @@ class ConsultationRepository extends ServiceEntityRepository
         ;
     }
     */
+
+
 }

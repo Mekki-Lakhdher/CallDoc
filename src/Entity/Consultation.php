@@ -20,11 +20,6 @@ class Consultation
     /**
      * @ORM\Column(type="integer")
      */
-    private $patient_id;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
     private $doctor_id;
 
     /**
@@ -42,21 +37,20 @@ class Consultation
      */
     private $confirmed;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $canceled;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="consultations")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $patient_id;
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getPatientId(): ?int
-    {
-        return $this->patient_id;
-    }
-
-    public function setPatientId(int $patient_id): self
-    {
-        $this->patient_id = $patient_id;
-
-        return $this;
     }
 
     public function getDoctorId(): ?int
@@ -103,6 +97,30 @@ class Consultation
     public function setConfirmed($confirmed): self
     {
         $this->confirmed = $confirmed;
+
+        return $this;
+    }
+
+    public function getCanceled(): ?int
+    {
+        return $this->canceled;
+    }
+
+    public function setCanceled(int $canceled): self
+    {
+        $this->canceled = $canceled;
+
+        return $this;
+    }
+
+    public function getPatientId(): ?User
+    {
+        return $this->patient_id;
+    }
+
+    public function setPatientId(?User $patient_id): self
+    {
+        $this->patient_id = $patient_id;
 
         return $this;
     }

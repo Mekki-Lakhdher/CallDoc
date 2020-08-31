@@ -9,6 +9,7 @@
 // src/Controller/PatientsController.php
 namespace App\Controller;
 
+use App\Entity\Consultation;
 use App\Entity\User;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -26,6 +27,21 @@ class PatientsController extends AbstractController
             ['first_name' => 'ASC']
         );
 
+
+
+        // Get logged user_id
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        $user_id=$user->getId();
+
+        // Get all dates
+        $repository = $this->getDoctrine()
+            ->getRepository(Consultation::class);
+        $asked_consultations = $repository->findAll();
+
+        $repository = $this->getDoctrine()
+            ->getRepository(User::class);
+        $data=$repository->findPatientsWithTheirConsultations($user_id);
+
         $patients = $paginator->paginate(
             $data,
             $request->query->getInt('page', 1),
@@ -33,8 +49,10 @@ class PatientsController extends AbstractController
         );
 
         return $this->render('patients.html.twig', [
-            'patients' => $patients
+            'patients' => $patients,
+            'asked_consultations' => $asked_consultations,
         ]);
+
     }
 
 }

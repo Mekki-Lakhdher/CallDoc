@@ -33,16 +33,6 @@ class DoctorsController extends AbstractController
             10
         );
 
-        $consultation = new Consultation();
-        $form = $this->createForm(ConsultationFormType::class, $consultation);
-        $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            $consultation = $form->getData();
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($consultation);
-            $entityManager->flush();
-        }
-
         return $this->render('doctors.html.twig', [
             'doctors' => $doctors
         ]);

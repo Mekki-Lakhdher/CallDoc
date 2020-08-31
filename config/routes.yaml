@@ -14,3 +14,18 @@ doctor_schedule:
     path: /doctor_schedule/{doctor_id}
     controller: App\Controller\DoctorsController::scheduleAction
     methods:    POST|HEAD
+
+save_consultation:
+    path: /save_consultation
+    controller: App\Controller\ConsultationController::askForConsultationAction
+    methods:    POST|HEAD
+
+confirm_consultation:
+    path: /confirm_consultation/{consultation_id}
+    controller: App\Controller\ConsultationController::confirmConsultationAction
+    methods:    POST|HEAD
+
+consultation_decision:
+    path: /consultation_decision/{consultation_id}
+    controller: App\Controller\ConsultationController::saveConsultationDecisionAction
+    methods:    POST|HEAD

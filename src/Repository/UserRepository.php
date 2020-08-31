@@ -4,7 +4,9 @@ namespace App\Repository;
 
 use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Persistence\ManagerRegistry;
+use PhpParser\Node\Expr\Array_;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -64,4 +66,29 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         ;
     }
     */
+
+    public function findPatientsWithTheirConsultations($doctor_id): array
+    {
+        $conn = $this->getEntityManager()->getConnection();
+
+        $sql = "
+        SELECT  `first_name`,
+                `last_name`,
+                `phone_number`,
+                `email`,
+                `consultation`.`id` as `consultation_id`
+        FROM `user`
+        LEFT JOIN `consultation`
+        ON `consultation`.`patient_id_id`=`user`.`id`
+        WHERE `user`.`role` LIKE 'ROLE_PATIENT' AND `consultation`.`doctor_id`=:doctor_id
+        OR `consultation`.`id` IS NULL AND `user`.`role` LIKE 'ROLE_PATIENT'";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute(['doctor_id' => $doctor_id]);
+        $result = $stmt->fetchAll();
+
+        // returns an array of arrays (i.e. a raw data set)
+        return $result;
+
+    }
+
 }
