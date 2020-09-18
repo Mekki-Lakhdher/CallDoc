@@ -37,20 +37,19 @@ class ConsultationController extends AbstractController
     }
 
     public function confirmConsultationAction(int $consultation_id,Request $request) {
+
         $consultation = $this->getDoctrine()
             ->getRepository(Consultation::class)
             ->find($consultation_id);
 
-        //print_r($consultation->getPatientId());
-
         $form = $this->createForm(ConsultationFormType::class, $consultation);
 
         return $this->render('consultation_confirmation.html.twig', [
+            'consultation' => $consultation,
             'form' => $form->createView(),
             'consultation_id' => $consultation_id,
             'choices'  => [
                 'id' => $consultation_id,
-                'test' => 10085,
             ],
         ]);
     }
@@ -76,6 +75,8 @@ class ConsultationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $consultation = $form->getData();
             $entityManager = $this->getDoctrine()->getManager();
+            dump($consultation);
+            die();
             $entityManager->persist($consultation);
             $entityManager->flush();
         }

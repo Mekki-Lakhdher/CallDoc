@@ -48,8 +48,6 @@ class DoctorsController extends AbstractController
 
         $form = $this->createForm(ConsultationFormType::class, $consultation);
 
-
-
         return $this->render('doctor_schedule.html.twig', [
             'form' => $form->createView(),
             'doctor_id' => $doctor_id,

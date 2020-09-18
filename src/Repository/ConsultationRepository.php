@@ -48,5 +48,19 @@ class ConsultationRepository extends ServiceEntityRepository
     }
     */
 
+    public function findUserConsultations($user_id): array
+    {
+        $conn = $this->getEntityManager()->getConnection();
+
+        $sql = "
+        SELECT * FROM `consultation` WHERE `doctor_id`=:user_id OR `patient_id_id`=:user_id";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute(['user_id' => $user_id]);
+        $result = $stmt->fetchAll();
+
+        // returns an array of arrays (i.e. a raw data set)
+        return $result;
+
+    }
 
 }

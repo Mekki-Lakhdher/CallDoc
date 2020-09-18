@@ -4,6 +4,8 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    app.activity_listener.class: App\Security\EventListener\ActivityListener
+    app.request_listener.class: App\Security\EventListener\RequestListener
 
 services:
     # default configuration for services in *this* file
@@ -29,3 +31,23 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    app.activity_listener:
+            class: App\Security\EventListener\ActivityListener
+            arguments: ['@security.context_listener', '@doctrine.orm.default_entity_manager']
+            tags:
+                - { name: kernel.event_listener, event: kernel.filtercontroller, method: onCoreController }
+
+
+    app.request_listener:
+            class: App\Security\EventListener\RequestListener
+            tags: [kernel.event_listener]
+
+
+
+
+
+
+
+
+

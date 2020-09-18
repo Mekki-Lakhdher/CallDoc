@@ -21,21 +21,31 @@
                 <th scope="col">Patient</th>
                 <th scope="col">Phone number</th>
                 <th scope="col">E-mail</th>
-                <th scope="col">Pending consultations</th>
+                <th scope="col">Consultations</th>
             </tr>
             </thead>
             <tbody>
 
             {% for patient in patients %}
                 <tr>
-                    <td scope="row">{{ patient.email }} {{ patient.email }}</td>
-                    <td>{{ patient.email }}</td>
+                    <td scope="row">{{ patient.first_name }} {{ patient.last_name }}</td>
+                    <td>{{ patient.phone_number }}</td>
                     <td>{{ patient.email }}</td>
                     <td>
                         {% if patient.consultation_id %}
-                            <button style="background-color: Transparent; border: none;" type="button" onclick="viewPendingConsultation('{{ patient.consultation_id }}');" class="btn btn-primary" data-toggle="modal" data-target="#consultationConfirmationModal">
-                                <img src="{{ asset('img/PendingConsultatio.png') }}">
-                            </button>
+                            {% if patient.confirmed %}
+                                <button style="background-color: Transparent; border: none;" type="button" onclick="viewPendingConsultation('{{ patient.consultation_id }}');" class="btn btn-primary" data-toggle="modal" data-target="#consultationConfirmationModal">
+                                    <img src="{{ asset('img/ConfirmedConsultation.png') }}"> <b style="color: #85e085;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;">Confirmed</b>
+                                </button>
+                            {% elseif patient.canceled %}
+                                <button style="background-color: Transparent; border: none;" type="button" onclick="viewPendingConsultation('{{ patient.consultation_id }}');" class="btn btn-primary" data-toggle="modal" data-target="#consultationConfirmationModal">
+                                    <img src="{{ asset('img/CanceledConsultation.png') }}"> <b style="color: #ff8566;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;">Canceled</b>
+                                </button>
+                            {% else %}
+                                <button style="background-color: Transparent; border: none;" type="button" onclick="viewPendingConsultation('{{ patient.consultation_id }}');" class="btn btn-primary" data-toggle="modal" data-target="#consultationConfirmationModal">
+                                    <img src="{{ asset('img/PendingConsultation.png') }}"> <b style="color: #ffd480;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;">Pending</b>
+                                </button>
+                            {% endif %}
                         {% endif %}
                     </td>
                 </tr>

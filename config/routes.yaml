@@ -27,5 +27,17 @@ confirm_consultation:
 
 consultation_decision:
     path: /consultation_decision/{consultation_id}
-    controller: App\Controller\ConsultationController::saveConsultationDecisionAction
+    controller: App\Controller\ConsultationController::confirm_consultation
     methods:    POST|HEAD
+
+profile:
+    path: /profile
+    controller: App\Controller\UserController::showProfileAction
+
+doctor_agenda:
+    path: /doctor_agenda
+    controller: App\Controller\UserController::showDoctorAgendaAction
+
+patient_agenda:
+    path: /patient_agenda
+    controller: App\Controller\UserController::showPatientAgendaAction

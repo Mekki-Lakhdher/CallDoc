@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -81,9 +82,23 @@ class User implements UserInterface
      */
     private $consultations;
 
+    /**
+     * Date/Time of the last activity
+     *
+     * @var \Datetime
+     * @ORM\Column(name="last_activity_at", type="datetime")
+     */
+    protected $last_activity_at;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Consultation::class, mappedBy="doctor_id")
+     */
+    private $doctor_consultations;
+
     public function __construct()
     {
         $this->consultations = new ArrayCollection();
+        $this->doctor_consultations = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -276,4 +291,72 @@ class User implements UserInterface
 
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function __toString(){
+        // to show the name of the Category in the select
+        return $this->first_name.' '.$this->last_name;
+        // to show the id of the Category in the select
+        // return $this->id;
+    }
+
+    /**
+     * @return \Datetime
+     */
+    public function getLastActivityAt()
+    {
+        return $this->last_activity_at;
+    }
+
+    /**
+     * @param \Datetime $last_activity_at
+     */
+    public function setLastActivityAt($last_activity_at)
+    {
+        $this->last_activity_at = $last_activity_at;
+    }
+
+    /**
+     * @return Bool Whether the user is active or not
+     */
+    public function isActiveNow()
+    {
+        // Delay during wich the user will be considered as still active
+        $delay = new \DateTime('2 minutes ago');
+        return ( $this->getLastActivityAt() > $delay );
+    }
+
+    /**
+     * @return Collection|Consultation[]
+     */
+    public function getDoctorConsultations(): Collection
+    {
+        return $this->doctor_consultations;
+    }
+
+    public function addDoctorConsultation(Consultation $doctorConsultation): self
+    {
+        if (!$this->doctor_consultations->contains($doctorConsultation)) {
+            $this->doctor_consultations[] = $doctorConsultation;
+            $doctorConsultation->setDoctorId($this);
+        }
+
+        return $this;
+    }
+
+    public function removeDoctorConsultation(Consultation $doctorConsultation): self
+    {
+        if ($this->doctor_consultations->contains($doctorConsultation)) {
+            $this->doctor_consultations->removeElement($doctorConsultation);
+            // set the owning side to null (unless already changed)
+            if ($doctorConsultation->getDoctorId() === $this) {
+                $doctorConsultation->setDoctorId(null);
+            }
+        }
+
+        return $this;
+    }
+
 }

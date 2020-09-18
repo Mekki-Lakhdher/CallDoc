@@ -27,8 +27,6 @@ class PatientsController extends AbstractController
             ['first_name' => 'ASC']
         );
 
-
-
         // Get logged user_id
         $user = $this->get('security.token_storage')->getToken()->getUser();
         $user_id=$user->getId();

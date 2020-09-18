@@ -18,11 +18,6 @@ class Consultation
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $doctor_id;
-
-    /**
      * @ORM\Column(type="datetime")
      */
     private $date;
@@ -33,7 +28,7 @@ class Consultation
     private $asked;
 
     /**
-     * @ORM\Column(type="binary")
+     * @ORM\Column(type="integer")
      */
     private $confirmed;
 
@@ -48,21 +43,15 @@ class Consultation
      */
     private $patient_id;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="doctor_consultations")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $doctor_id;
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getDoctorId(): ?int
-    {
-        return $this->doctor_id;
-    }
-
-    public function setDoctorId(int $doctor_id): self
-    {
-        $this->doctor_id = $doctor_id;
-
-        return $this;
     }
 
     public function getDate(): ?\DateTimeInterface
@@ -121,6 +110,18 @@ class Consultation
     public function setPatientId(?User $patient_id): self
     {
         $this->patient_id = $patient_id;
+
+        return $this;
+    }
+
+    public function getDoctorId(): ?User
+    {
+        return $this->doctor_id;
+    }
+
+    public function setDoctorId(?User $doctor_id): self
+    {
+        $this->doctor_id = $doctor_id;
 
         return $this;
     }

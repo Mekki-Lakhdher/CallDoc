@@ -27,17 +27,35 @@
                             <a class="nav-link" href="{{ path('home') }}">Home<span class="sr-only">(current)</span></a>
                         </li>
 
-                        {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_PATIENT' ) %}
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ path('doctors') }}">Doctors<span class="sr-only">(current)</span></a>
-                        </li>
-                        {% endif %}
+                        {% block doctor %}
+                            {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_PATIENT' ) %}
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{ path('doctors') }}">Doctors<span class="sr-only">(current)</span></a>
+                            </li>
+                            {% endif %}
+                        {% endblock %}
 
-                        {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_DOCTOR' ) %}
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ path('patients') }}">Patients<span class="sr-only">(current)</span></a>
-                        </li>
-                        {% endif %}
+                        {% block patient %}
+                            {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_DOCTOR' ) %}
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{ path('patients') }}">Patients<span class="sr-only">(current)</span></a>
+                            </li>
+                            {% endif %}
+                        {% endblock %}
+
+                        {% block agenda %}
+                            {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_DOCTOR' ) %}
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{ path('doctor_agenda') }}">Agenda<span class="sr-only">(current)</span></a>
+                            </li>
+                            {% endif %}
+
+                            {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_PATIENT' ) %}
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{ path('patient_agenda') }}">Agenda<span class="sr-only">(current)</span></a>
+                            </li>
+                            {% endif %}
+                        {% endblock %}
 
                     </ul>
 
@@ -47,7 +65,7 @@
                         <a class="btn btn-link" style="color: white;" href="{{ path('app_register') }}">Sign up</a>
                         <a class="btn btn-link" style="color: white;" href="{{ path('app_login') }}">Sign in</a>
                         {% else %}
-                        <span>Comeback soon, {{ app.user.getFirstName() }} ?</span>
+                        <span>Comeback soon, <a style="color: white;" class="link" href="{{ path('profile') }}">{{ app.user.getFirstName() }}<span class="sr-only">(current)</span></a> ?</span>
                         <a class="btn btn-link" style="color: white;" href="{{ path('app_logout') }}">Sign out</a>
                         {% endif %}
                     </form>

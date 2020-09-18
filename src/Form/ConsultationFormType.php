@@ -20,6 +20,7 @@ class ConsultationFormType extends AbstractType
             ->add('asked')
             ->add('confirmed')
             ->add('canceled')
+            ->add('chat_room_id')
             ->add('confirm', SubmitType::class, ['label' => 'Confirm'])
             ->add('cancel', SubmitType::class, [
                 'label' => 'Cancel',

@@ -2,25 +2,20 @@
     <tr>
         <th>Patient</th>
         <td>
+            {{ consultation.getPatientId() }}
         </td>
     </tr>
-
     <tr>
         <th>Date</th>
         <td>
-        </td>
-    </tr>
-
-    <tr>
-        <th>Description</th>
-        <td>
+            {{ consultation.getDate()|date("D j M Y - G:i:s") }}
         </td>
     </tr>
 </table>
 
 {% set action = "consultation_decision/#{consultation_id}" %}
 {{ form_start(form,{'action': action}) }}
-    <table hidden="hidden">
+    <table>
         <tr>
             <td>Patient</td>
             <td>{{ form_errors(form.patient_id) }}</td>
@@ -51,6 +46,11 @@
             <td>{{ form_errors(form.canceled) }}</td>
             <td>{{ form_widget(form.canceled, {'value' : 0}) }}</td>
         </tr>
+        <tr>
+            <td>Chat room id</td>
+            <td>{{ form_errors(form.chat_room_id) }}</td>
+            <td>{{ form_widget(form.chat_room_id, {'value' : 0}) }}</td>
+        </tr>
     </table>
 
 <div class="modal-footer">
@@ -64,6 +64,10 @@
     document.getElementById("consultation_form_confirm").onclick = function () {
         document.getElementById("consultation_form_confirmed").value=1;
         document.getElementById("consultation_form_canceled").value=0;
+
+        // Set the room id
+        var time=new Date().getTime();
+        document.getElementById("consultation_form_chat_room_id").value='{{ consultation_id }}'+time;
     };
 
     document.getElementById("consultation_form_cancel").onclick = function () {
