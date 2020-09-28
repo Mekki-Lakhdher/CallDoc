@@ -53,7 +53,7 @@
 </table>
 
 {{ form_start(form,{'action': 'save_consultation'}) }}
-    <table class="hidden">
+    <table style="display: none;">
         <tr>
             <td>Patient</td>
             <td>{{ form_errors(form.patient_id) }}</td>
@@ -110,10 +110,14 @@
         var mounth=parseInt(res[1]);
         var year=parseInt(res[2]);
 
-        // Set date symfony form
+        // Set date
         document.getElementById("consultation_form_date_date_day").value=day;
         document.getElementById("consultation_form_date_date_month").value=mounth;
         document.getElementById("consultation_form_date_date_year").value=year;
+
+        // Set patient and doctor ids
+        document.getElementById("consultation_form_patient_id").value={{ app.user.id }};
+        document.getElementById("consultation_form_doctor_id").value={{ doctor_id }};
 
     }
 

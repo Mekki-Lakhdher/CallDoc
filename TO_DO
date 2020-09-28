@@ -1,0 +1,5 @@
+Make the admin interfaces.
+
+Make unit test using PHPUnit.
+
+Generate ssl certificate for the site to enable https connection and then enable access for media from other devices.

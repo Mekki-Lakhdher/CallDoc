@@ -72,18 +72,22 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $conn = $this->getEntityManager()->getConnection();
 
         $sql = "
-        SELECT  `first_name`,
+        SELECT `first_name`,
                 `last_name`,
                 `phone_number`,
                 `email`,
                 `consultation`.`id` as `consultation_id`,
                 `consultation`.`confirmed`,
                 `consultation`.`canceled`
-        FROM `user`
-        LEFT JOIN `consultation`
-        ON `consultation`.`patient_id_id`=`user`.`id`
-        WHERE `user`.`role` LIKE 'ROLE_PATIENT' AND `consultation`.`doctor_id_id`=:doctor_id
-        OR `consultation`.`id` IS NULL AND `user`.`role` LIKE 'ROLE_PATIENT'";
+
+FROM `user`
+
+LEFT JOIN `consultation`
+
+ON `user`.`id`=`consultation`.`patient_id_id` AND `consultation`.`doctor_id_id`=:doctor_id
+
+WHERE `user`.`role`='ROLE_PATIENT'
+        ";
         $stmt = $conn->prepare($sql);
         $stmt->execute(['doctor_id' => $doctor_id]);
         $result = $stmt->fetchAll();

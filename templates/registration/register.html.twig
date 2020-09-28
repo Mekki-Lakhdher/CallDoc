@@ -17,63 +17,257 @@
     {{ form_start(registrationForm) }}
 
     <div class="jumbotron bg-light">
-        <table class="mx-auto">
+        <table class="mx-auto" style="width: 60%;">
             <tr>
-                <td>{{ form_label(registrationForm.first_name) }}</td>
-                <td>{{ form_errors(registrationForm.first_name) }}</td>
-                <td>{{ form_widget(registrationForm.first_name) }}</td>
-                <td style="width: 10%;"></td>
-                <td>{{ form_label(registrationForm.last_name) }}</td>
-                <td>{{ form_errors(registrationForm.last_name) }}</td>
-                <td>{{ form_widget(registrationForm.last_name) }}</td>
-            </tr>
-            <tr>
-                <td>{{ form_label(registrationForm.birth_date) }}</td>
-                <td>{{ form_errors(registrationForm.birth_date) }}</td>
-                <td>{{ form_widget(registrationForm.birth_date) }}</td>
-                <td style="width: 10%;"></td>
-                <td>{{ form_label(registrationForm.phone_number) }}</td>
-                <td>{{ form_errors(registrationForm.phone_number) }}</td>
-                <td>{{ form_widget(registrationForm.phone_number) }}</td>
-            </tr>
-            <tr>
-                <td>{{ form_label(registrationForm.email) }}</td>
-                <td>{{ form_errors(registrationForm.email) }}</td>
-                <td colspan="5">{{ form_widget(registrationForm.email) }}</td>
-            </tr>
-            <tr>
-                <td>{{ form_label(registrationForm.role) }}</td>
-                <td>{{ form_errors(registrationForm.role) }}</td>
-                <td>{{ form_widget(registrationForm.role) }}</td>
-                <td style="width: 10%;"></td>
-                <td>{{ form_label(registrationForm.speciality) }}</td>
-                <td>{{ form_errors(registrationForm.speciality) }}</td>
-                <td>{{ form_widget(registrationForm.speciality) }}</td>
-            </tr>
-            <tr>
-                <td>{{ form_label(registrationForm.plainPassword.first) }}</td>
-                <td>{{ form_errors(registrationForm.plainPassword.first) }}</td>
-                <td>{{ form_widget(registrationForm.plainPassword.first) }}</td>
-                <td style="width: 10%;"></td>
-                <td>{{ form_label(registrationForm.plainPassword.second) }}</td>
-                <td>{{ form_errors(registrationForm.plainPassword.second) }}</td>
-                <td>{{ form_widget(registrationForm.plainPassword.second) }}</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>{{ form_errors(registrationForm.agreeTerms) }}</td>
-                <td style="text-align: right;">{{ form_widget(registrationForm.agreeTerms) }}</td>
-                <td style="text-align: left;">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
-                        [ Read ]
-                    </button>
+                <td style="width: 50%;">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.first_name) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.first_name) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.first_name) }}</td>
+                        </tr>
+                    </table>
                 </td>
-                <td></td>
-                <td></td>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.last_name) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.last_name) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.last_name) }}</td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
+
+            <tr>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.birth_date) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.birth_date) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.birth_date) }}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.phone_number) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                                <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.phone_number) }}
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.phone_number) }}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.email) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            @
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.email) }}
+                                </div></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.email) }}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <table style="width: 100%;display: none;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.roles) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.roles) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.roles) }}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.role) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.role) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.role) }}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.speciality) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.speciality) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.speciality) }}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.profile_picture) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.profile_picture) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.profile_picture) }}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="text-align: center;">AAA</td>
+                            <td style="text-align: center;">BBB</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.plainPassword.first) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.plainPassword.first) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.plainPassword.first) }}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.plainPassword.second) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_widget(registrationForm.plainPassword.second) }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ form_help(registrationForm.plainPassword.second) }}</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{{ form_label(registrationForm.agreeTerms) }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="">{{ form_widget(registrationForm.agreeTerms) }}</td>
+                        </tr>
+                        <tr>
+                            <td><!-- Button trigger modal -->
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                                    [ Read ]
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
             <tr style="text-align: center;">
-                <td colspan="7"><button class="btn btn-primary" type="submit" style="margin-top: 5%;">Sign up</button></td>
+                <td colspan=""><button class="btn btn-primary" type="submit" style="margin-top: 5%;">Sign up</button></td>
             </tr>
         </table>
     </div>
@@ -91,7 +285,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Bla bla bla ...
+                    Here are our terms :
+                    <ul>
+                        <li>Term 1</li>
+                        <li>Term 2</li>
+                        <li>Term 3</li>
+                        <li>...</li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
@@ -100,4 +300,32 @@
         </div>
     </div>
 
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        // Disable 'speciality' field
+        $('#registration_form_speciality').attr('disabled','disabled');
+        // Set 'birth_date' field width
+        document.getElementById('registration_form_birth_date_day').style.width='33%';
+        document.getElementById('registration_form_birth_date_month').style.width='33%';
+        document.getElementById('registration_form_birth_date_year').style.width='34%';
+        // Set 'roles' field value
+        var role=$('#registration_form_role');
+        role.change( function() {
+            var role_object=document.getElementById('registration_form_role');
+            document.getElementById('registration_form_roles').value=role_object.value;
+            // Show / hide 'speciality' field
+            if (role_object.value=='ROLE_DOCTOR') {
+                // Enable the 'speciality' field input
+                $('#registration_form_speciality').removeAttr('disabled');
+            }
+            else {
+                // Disable & empty the 'speciality' field input
+                $('#registration_form_speciality').attr('disabled','disabled');
+                document.getElementById('registration_form_speciality').value='';
+            }
+        });
+    </script>
 {% endblock %}

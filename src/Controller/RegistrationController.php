@@ -11,6 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class RegistrationController extends AbstractController
 {
@@ -31,6 +32,8 @@ class RegistrationController extends AbstractController
                     $form->get('plainPassword')->getData()
                 )
             );
+            dump($user);
+            die();
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
@@ -42,7 +45,7 @@ class RegistrationController extends AbstractController
                 $request,
                 $authenticator,
                 'main' // firewall name in security.yaml
-            );
+            )?: new RedirectResponse('/'); // fallback
         }
 
         return $this->render('registration/register.html.twig', [

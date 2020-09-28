@@ -30,8 +30,12 @@ socket.on('user-connected', userId => {
 
 socket.on('user-disconnected', userId => {
     console.log("User disconnected !")
-  //if (peers[userId]) peers[userId].close()
-    peers[userId].close()
+    if (peers[userId]) peers[userId].close()
+    if (!peers[userId]) {
+        console.log("Remove video !")
+        let other_video = document.getElementById('other_video');
+        other_video.innerHTML = '';
+    }
 })
 
 myPeer.on('open', id => {
@@ -53,7 +57,6 @@ function connectToNewUser(userId, stream) {
 
 function addVideoStream(video, stream, id) {
     const video_placememnt = document.getElementById(id)
-
     video.srcObject = stream
     video.addEventListener('loadedmetadata', () => {
     video.play()

@@ -75,8 +75,6 @@ class ConsultationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $consultation = $form->getData();
             $entityManager = $this->getDoctrine()->getManager();
-            dump($consultation);
-            die();
             $entityManager->persist($consultation);
             $entityManager->flush();
         }

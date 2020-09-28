@@ -27,7 +27,7 @@ confirm_consultation:
 
 consultation_decision:
     path: /consultation_decision/{consultation_id}
-    controller: App\Controller\ConsultationController::confirm_consultation
+    controller: App\Controller\ConsultationController::saveConsultationDecisionAction
     methods:    POST|HEAD
 
 profile:

@@ -3,20 +3,19 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
-use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-
+use Serializable;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
+ * @UniqueEntity(fields={"email"}, message="There is already an account with this email.")
  */
-class User implements UserInterface
+class User implements UserInterface, Serializable
 {
     /**
      * @ORM\Id()
@@ -48,11 +47,19 @@ class User implements UserInterface
     private $plainPassword;
 
     /**
+     * @Assert\Length(
+     *      min = 2,
+     *      max = 50
+     * )
      * @ORM\Column(type="string", length=50)
      */
     private $first_name;
 
     /**
+     * @Assert\Length(
+     *      min = 2,
+     *      max = 50
+     * )
      * @ORM\Column(type="string", length=50)
      */
     private $last_name;
@@ -63,6 +70,10 @@ class User implements UserInterface
     private $birth_date;
 
     /**
+     * @Assert\Length(
+     *      min = 8,
+     *      max = 25
+     * )
      * @ORM\Column(type="integer")
      */
     private $phone_number;
@@ -86,7 +97,7 @@ class User implements UserInterface
      * Date/Time of the last activity
      *
      * @var \Datetime
-     * @ORM\Column(name="last_activity_at", type="datetime")
+     * @ORM\Column(name="last_activity_at", type="datetime", nullable=true)
      */
     protected $last_activity_at;
 
@@ -94,6 +105,26 @@ class User implements UserInterface
      * @ORM\OneToMany(targetEntity=Consultation::class, mappedBy="doctor_id")
      */
     private $doctor_consultations;
+
+    /**
+     * @ORM\Column(type="blob")
+     * @Assert\Image(
+     *     minWidth = 200,
+     *     maxWidth = 400,
+     *     minHeight = 200,
+     *     maxHeight = 400,
+     *     allowLandscape = false,
+     *     allowPortrait = false,
+     *     allowLandscape=false,
+     *     allowLandscapeMessage="The image is landscape oriented ({{ width }}x{{ height }}px).
+                Landscape oriented images are not allowed.",
+     *     allowPortrait=false,
+     *     allowPortraitMessage="The image is portrait oriented ({{ width }}x{{ height }}px).
+                Portrait oriented images are not allowed."
+     * )
+     * allowLandscape = false,
+     */
+    private $profile_picture;
 
     public function __construct()
     {
@@ -357,6 +388,77 @@ class User implements UserInterface
         }
 
         return $this;
+    }
+
+    public function getProfilePicture()
+    {
+        return $this->profile_picture;
+    }
+
+    public function setProfilePicture($profile_picture): self
+    {
+        $this->profile_picture = $profile_picture;
+
+        return $this;
+    }
+
+    /**
+     * String representation of object
+     * @link http://php.net/manual/en/serializable.serialize.php
+     * @return string the string representation of the object or null
+     * @since 5.1.0
+     */
+    public function serialize()
+    {
+        // TODO: Implement serialize() method.
+        return serialize(array(
+            $this->id,
+            $this->email,
+            $this->roles,
+            $this->password,
+            $this->plainPassword,
+            $this->first_name,
+            $this->last_name,
+            $this->birth_date,
+            $this->phone_number,
+            $this->speciality,
+            $this->role,
+            $this->consultations,
+            $this->last_activity_at,
+            $this->doctor_consultations,
+            //$this->profile_picture,
+        ));
+    }
+
+    /**
+     * Constructs the object
+     * @link http://php.net/manual/en/serializable.unserialize.php
+     * @param string $serialized <p>
+     * The string representation of the object.
+     * </p>
+     * @return void
+     * @since 5.1.0
+     */
+    public function unserialize($serialized)
+    {
+        // TODO: Implement unserialize() method.
+        list (
+            $this->id,
+            $this->email,
+            $this->roles,
+            $this->password,
+            $this->plainPassword,
+            $this->first_name,
+            $this->last_name,
+            $this->birth_date,
+            $this->phone_number,
+            $this->speciality,
+            $this->role,
+            $this->consultations,
+            $this->last_activity_at,
+            $this->doctor_consultations,
+            //$this->profile_picture,
+            ) = unserialize($serialized);
     }
 
 }

@@ -40,7 +40,7 @@ class DoctorsController extends AbstractController
 
     public function scheduleAction(int $doctor_id,Request $request)
     {
-        $doctor = $this->getDoctrine()
+        $doctor=$this->getDoctrine()
             ->getRepository(User::class)
             ->find($doctor_id);
 
@@ -50,6 +50,7 @@ class DoctorsController extends AbstractController
 
         return $this->render('doctor_schedule.html.twig', [
             'form' => $form->createView(),
+            'doctor' => $doctor,
             'doctor_id' => $doctor_id,
             'choices'  => [
                 'id' => $doctor_id,

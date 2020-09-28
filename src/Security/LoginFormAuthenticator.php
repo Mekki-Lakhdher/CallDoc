@@ -20,12 +20,12 @@ use Symfony\Component\Security\Guard\Authenticator\AbstractFormLoginAuthenticato
 use Symfony\Component\Security\Guard\PasswordAuthenticatedInterface;
 use Symfony\Component\Security\Http\Util\TargetPathTrait;
 
+
 class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements PasswordAuthenticatedInterface
 {
     use TargetPathTrait;
 
     public const LOGIN_ROUTE = 'app_login';
-
     private $entityManager;
     private $urlGenerator;
     private $csrfTokenManager;
@@ -92,11 +92,13 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, $providerKey)
     {
-        if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
-            return new RedirectResponse($targetPath);
-        }
 
-        return new RedirectResponse($this->urlGenerator->generate('home'));
+//        if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
+//            return new RedirectResponse($targetPath);
+//        }
+//
+//        return new RedirectResponse($this->urlGenerator->generate('home'));
+        return null;
     }
 
     protected function getLoginUrl()
