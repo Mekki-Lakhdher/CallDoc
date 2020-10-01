@@ -21,36 +21,49 @@ class RegistrationFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $year = date('Y');
+
+        $year = date("Y");
+        $min_year = ($year -150).'-01-01';
+        $today = date("Y-m-d");
+        $max_year = $today;
+
         $builder
             ->add('first_name',TextType::class, array(
                 'help' => 'Your first name.',
                 'attr' => array(
-                    'placeholder' => 'John'
+                    'placeholder' => 'John',
+                    'style' => 'background-color:white;',
                 ),
             ))
             ->add('last_name',TextType::class, array(
                 'help' => 'Your last name.',
                 'attr' => array(
-                    'placeholder' => 'Doe'
+                    'placeholder' => 'Doe',
+                    'style' => 'background-color:white;',
                 ),
             ))
-            ->add('birth_date',DateType::class, array(
-                'placeholder' => [
-                    'year' => 'Year', 'month' => 'Month', 'day' => 'Day',
+            ->add('gender', ChoiceType::class, array(
+                'placeholder' => 'Choose option',
+                'choices'  => [
+                    'Male'=>'Male',
+                    'Female'=>'Female',
+                    'Other'=>'Other',
                 ],
-                'years' => range(1920,$year),
-                'help' => 'Your birth of date.',
-                'widget' => 'choice',
-                'format' => 'ddMMyyyy',
+                'help' => 'Your gender.',
+            ))
+            ->add('birth_date',DateType::class, array(
+                'help' => 'Your date of birth.',
+                'widget' => 'single_text',
                 'attr' => array(
-                    'width' => '100%',
+                    'min' => $min_year,
+                    'max' => $max_year,
                 ),
             ))
             ->add('phone_number', NumberType::class, array(
                 'help' => 'Your phone number.',
                 'attr' => array(
-                    'placeholder' => 'XX XXX XXX'
+                    'placeholder' => 'XX XXX XXX',
+                    'style' => 'background-color:white;',
                 ),
             ))
             ->add('email', EmailType::class, array(
@@ -81,13 +94,14 @@ class RegistrationFormType extends AbstractType
                     'multiple' => true,
                 )
             )
-            ->add('speciality', ChoiceType::class, array(
-                'placeholder' => 'Choose option',
-                'choices'  => [
-                    'Doctor'=>'ROLE_DOCTOR',
-                    'Patient'=>'ROLE_PATIENT',
-                ],
+            ->add('speciality', TextType::class, array(
                 'help' => 'Your medical speciality.',
+                'attr' => [
+                    'placeholder' => 'Search',
+                    'class' => 'form-control',
+                    'style' => 'background-color:white;',
+                ],
+
             ))
             ->add('profile_picture',FileType::class, array(
                 'help' => 'Your display profile picture.',
@@ -99,6 +113,7 @@ class RegistrationFormType extends AbstractType
                         'message' => 'You should agree to our terms.',
                     ]),
                 ],
+                'label' => ' ',
             ])
             ->add('plainPassword', RepeatedType::class, array(
                 'type' => PasswordType::class,
@@ -115,4 +130,5 @@ class RegistrationFormType extends AbstractType
             'data_class' => User::class,
         ]);
     }
+
 }

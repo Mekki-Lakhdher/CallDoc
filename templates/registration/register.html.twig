@@ -1,11 +1,15 @@
 {% extends "base.html.twig" %}
 
 {% block title %}Sign up{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    {#<link rel="stylesheet" href="jqueryui/style.css">#}
+    <link href="{{ asset('css/jquery.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/lightness.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/registration.css') }}" rel="stylesheet">
+{% endblock %}
 {% block head %}
     {{ parent() }}
-    <style type="text/css">
-        .important { color: #336699; }
-    </style>
 {% endblock %}
     {% form_theme registrationForm 'bootstrap_4_layout.html.twig' %}
 
@@ -15,38 +19,50 @@
     {% endblock %}
 
     {{ form_start(registrationForm) }}
-
     <div class="jumbotron bg-light">
         <table class="mx-auto" style="width: 60%;">
             <tr>
-                <td style="width: 50%;">
+                <td colspan="2">
                     <table style="width: 100%;">
                         <tr>
-                            <td>{{ form_label(registrationForm.first_name) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.first_name) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.last_name) }}</td>
                         </tr>
                         <tr>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>{{ form_widget(registrationForm.first_name) }}</td>
+                            <td>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-heading" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                                <path fill-rule="evenodd" d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                                                <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.first_name) }}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-heading" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                                <path fill-rule="evenodd" d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                                                <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.last_name) }}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>{{ form_help(registrationForm.first_name) }}</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table style="width: 100%;">
-                        <tr>
-                            <td>{{ form_label(registrationForm.last_name) }}</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_widget(registrationForm.last_name) }}</td>
-                        </tr>
-                        <tr>
                             <td>{{ form_help(registrationForm.last_name) }}</td>
                         </tr>
                     </table>
@@ -54,26 +70,55 @@
             </tr>
 
             <tr>
-                <td>
+                <td colspan="2">
                     <table style="width: 100%;">
-                        <tr>
-                            <td>{{ form_label(registrationForm.birth_date) }}</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_widget(registrationForm.birth_date) }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_help(registrationForm.birth_date) }}</td>
-                        </tr>
+
+                            <tr>
+                                <td style="width: 50%;">{{ form_label(registrationForm.gender) }}</td>
+                                <td style="width: 50%;">{{ form_label(registrationForm.birth_date) }}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        {{ form_widget(registrationForm.gender) }}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar2-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                                                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        {{ form_widget(registrationForm.birth_date) }}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{{ form_help(registrationForm.gender) }}</td>
+                                <td>{{ form_help(registrationForm.birth_date) }}</td>
+                            </tr>
+
                     </table>
                 </td>
-                <td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
                     <table style="width: 100%;">
                         <tr>
-                            <td>{{ form_label(registrationForm.phone_number) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.phone_number) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.email) }}</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -92,34 +137,19 @@
                                     {{ form_widget(registrationForm.phone_number) }}
                                 </div>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_help(registrationForm.phone_number) }}</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td colspan="2">
-                    <table style="width: 100%;">
-                        <tr>
-                            <td>{{ form_label(registrationForm.email) }}</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><div class="input-group mb-2">
+                            <td>
+                                <div class="input-group mb-2">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">
                                             @
                                         </div>
                                     </div>
                                     {{ form_widget(registrationForm.email) }}
-                                </div></td>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
+                            <td>{{ form_help(registrationForm.phone_number) }}</td>
                             <td>{{ form_help(registrationForm.email) }}</td>
                         </tr>
                     </table>
@@ -136,7 +166,9 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>{{ form_widget(registrationForm.roles) }}</td>
+                            <td>
+                                {{ form_widget(registrationForm.roles) }}
+                            </td>
                         </tr>
                         <tr>
                             <td>{{ form_help(registrationForm.roles) }}</td>
@@ -146,34 +178,44 @@
             </tr>
 
             <tr>
-                <td>
+                <td colspan="2">
                     <table style="width: 100%;">
                         <tr>
-                            <td>{{ form_label(registrationForm.role) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.role) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.speciality) }}</td>
                         </tr>
                         <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_widget(registrationForm.role) }}</td>
+                            <td>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h7A2.5 2.5 0 0 1 14 2.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2.5zM4.5 1A1.5 1.5 0 0 0 3 2.5v10.795a4.2 4.2 0 0 1 .776-.492C4.608 12.387 5.937 12 8 12s3.392.387 4.224.803a4.2 4.2 0 0 1 .776.492V2.5A1.5 1.5 0 0 0 11.5 1h-7z"/>
+                                                <path fill-rule="evenodd" d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.role) }}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="autocomplete" style="width: 100%;">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h7A2.5 2.5 0 0 1 14 2.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2.5zM4.5 1A1.5 1.5 0 0 0 3 2.5v10.795a4.2 4.2 0 0 1 .776-.492C4.608 12.387 5.937 12 8 12s3.392.387 4.224.803a4.2 4.2 0 0 1 .776.492V2.5A1.5 1.5 0 0 0 11.5 1h-7z"/>
+                                                    <path fill-rule="evenodd" d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        {{ form_widget(registrationForm.speciality) }}
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>{{ form_help(registrationForm.role) }}</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table style="width: 100%;">
-                        <tr>
-                            <td>{{ form_label(registrationForm.speciality) }}</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_widget(registrationForm.speciality) }}</td>
-                        </tr>
-                        <tr>
                             <td>{{ form_help(registrationForm.speciality) }}</td>
                         </tr>
                     </table>
@@ -181,7 +223,7 @@
             </tr>
 
             <tr>
-                <td>
+                <td colspan="2">
                     <table style="width: 100%;">
                         <tr>
                             <td>{{ form_label(registrationForm.profile_picture) }}</td>
@@ -190,52 +232,63 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>{{ form_widget(registrationForm.profile_picture) }}</td>
+                            <td>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-bounding-box" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                                                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.profile_picture) }}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>{{ form_help(registrationForm.profile_picture) }}</td>
                         </tr>
                     </table>
                 </td>
-                <td>
-                    <table style="width: 100%;">
-                        <tr>
-                            <td style="text-align: center;">AAA</td>
-                            <td style="text-align: center;">BBB</td>
-                        </tr>
-                    </table>
-                </td>
             </tr>
 
             <tr>
-                <td>
+                <td colspan="2">
                     <table style="width: 100%;">
                         <tr>
-                            <td>{{ form_label(registrationForm.plainPassword.first) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.plainPassword.first) }}</td>
+                            <td style="width: 50%;">{{ form_label(registrationForm.plainPassword.second) }}</td>
                         </tr>
                         <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_widget(registrationForm.plainPassword.first) }}</td>
+                            <td>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M11.5 8h-7a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm-7-1a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-7zm0-3a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.plainPassword.first) }}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+                                                <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    {{ form_widget(registrationForm.plainPassword.second) }}
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>{{ form_help(registrationForm.plainPassword.first) }}</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table style="width: 100%;">
-                        <tr>
-                            <td>{{ form_label(registrationForm.plainPassword.second) }}</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>{{ form_widget(registrationForm.plainPassword.second) }}</td>
-                        </tr>
-                        <tr>
                             <td>{{ form_help(registrationForm.plainPassword.second) }}</td>
                         </tr>
                     </table>
@@ -246,19 +299,11 @@
                 <td>
                     <table style="width: 100%;">
                         <tr>
-                            <td>{{ form_label(registrationForm.agreeTerms) }}</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td colspan="">{{ form_widget(registrationForm.agreeTerms) }}</td>
-                        </tr>
-                        <tr>
-                            <td><!-- Button trigger modal -->
-                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
-                                    [ Read ]
-                                </button>
+                            <td style="text-align: right;">
+                                {{ form_widget(registrationForm.agreeTerms) }}
+                            </td>
+                            <td>
+                                By accessing this site, you agree to the terms and conditions as outlined in this<a href="#" data-toggle="modal" data-target="#exampleModal"> legal notice</a> .
                             </td>
                         </tr>
                     </table>
@@ -304,28 +349,15 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript">
-        // Disable 'speciality' field
-        $('#registration_form_speciality').attr('disabled','disabled');
-        // Set 'birth_date' field width
-        document.getElementById('registration_form_birth_date_day').style.width='33%';
-        document.getElementById('registration_form_birth_date_month').style.width='33%';
-        document.getElementById('registration_form_birth_date_year').style.width='34%';
-        // Set 'roles' field value
-        var role=$('#registration_form_role');
-        role.change( function() {
-            var role_object=document.getElementById('registration_form_role');
-            document.getElementById('registration_form_roles').value=role_object.value;
-            // Show / hide 'speciality' field
-            if (role_object.value=='ROLE_DOCTOR') {
-                // Enable the 'speciality' field input
-                $('#registration_form_speciality').removeAttr('disabled');
-            }
-            else {
-                // Disable & empty the 'speciality' field input
-                $('#registration_form_speciality').attr('disabled','disabled');
-                document.getElementById('registration_form_speciality').value='';
-            }
-        });
-    </script>
+    <script src="{{ asset('js/registration.js') }}"></script>
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    {#<script>#}
+        {#$(document).ready(function() {#}
+            {#// you may need to change this code if you are not using Bootstrap Datepicker#}
+            {#$('.js-datepicker').datepicker({#}
+                {#format: 'yyyy-mm-dd'#}
+            {#});#}
+        {#});#}
+    {#</script>#}
 {% endblock %}

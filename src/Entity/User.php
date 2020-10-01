@@ -37,12 +37,19 @@ class User implements UserInterface, Serializable
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
+     * @Assert\Length(
+     *     min = 8,
+     *     max=4096
+     *     )
      */
     private $password;
 
     /**
      * @Assert\NotBlank()
-     * @Assert\Length(max=4096)
+     * @Assert\Length(
+     *     min = 8,
+     *     max=4096
+     *     )
      */
     private $plainPassword;
 
@@ -125,6 +132,11 @@ class User implements UserInterface, Serializable
      * allowLandscape = false,
      */
     private $profile_picture;
+
+    /**
+     * @ORM\Column(type="string", length=30)
+     */
+    private $gender;
 
     public function __construct()
     {
@@ -459,6 +471,18 @@ class User implements UserInterface, Serializable
             $this->doctor_consultations,
             //$this->profile_picture,
             ) = unserialize($serialized);
+    }
+
+    public function getGender(): ?string
+    {
+        return $this->gender;
+    }
+
+    public function setGender(string $gender): self
+    {
+        $this->gender = $gender;
+
+        return $this;
     }
 
 }

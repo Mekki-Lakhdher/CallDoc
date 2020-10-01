@@ -19,10 +19,9 @@ class DoctorSpecialityRepository extends ServiceEntityRepository
         parent::__construct($registry, DoctorSpeciality::class);
     }
 
-    // /**
-    //  * @return DoctorSpeciality[] Returns an array of DoctorSpeciality objects
-    //  */
-    /*
+    /**
+    * @return DoctorSpeciality[] Returns an array of DoctorSpeciality objects
+    */
     public function findByExampleField($value)
     {
         return $this->createQueryBuilder('d')
@@ -34,9 +33,7 @@ class DoctorSpecialityRepository extends ServiceEntityRepository
             ->getResult()
         ;
     }
-    */
 
-    /*
     public function findOneBySomeField($value): ?DoctorSpeciality
     {
         return $this->createQueryBuilder('d')
@@ -46,5 +43,5 @@ class DoctorSpecialityRepository extends ServiceEntityRepository
             ->getOneOrNullResult()
         ;
     }
-    */
+
 }

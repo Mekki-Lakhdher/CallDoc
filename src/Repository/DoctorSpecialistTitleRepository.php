@@ -47,4 +47,13 @@ class DoctorSpecialistTitleRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findSpec(): array
+    {
+        $qb = $this
+            ->createQueryBuilder('u')
+            ->select('u');
+        return $qb->getQuery()->getArrayResult();
+    }
+
 }
