@@ -23,16 +23,13 @@ navigator.mediaDevices.getUserMedia({
   })
 
 socket.on('user-connected', userId => {
-    console.log("User connected !")
     connectToNewUser(userId, stream)
   })
 })
 
 socket.on('user-disconnected', userId => {
-    console.log("User disconnected !")
     if (peers[userId]) peers[userId].close()
     if (!peers[userId]) {
-        console.log("Remove video !")
         let other_video = document.getElementById('other_video');
         other_video.innerHTML = '';
     }

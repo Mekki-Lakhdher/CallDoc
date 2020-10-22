@@ -2,6 +2,10 @@ home:
     path: /
     controller: App\Controller\HomeController::indexAction
 
+login_success:
+    path: /login_success
+    controller: App\Controller\HomeController::loginAction
+
 doctors:
     path: /doctors
     controller: App\Controller\DoctorsController::indexAction
@@ -41,3 +45,20 @@ doctor_agenda:
 patient_agenda:
     path: /patient_agenda
     controller: App\Controller\UserController::showPatientAgendaAction
+
+administration_panel:
+    path: /administration_panel
+    controller: App\Controller\AdminController::showAdminPanelAction
+
+home_page_content:
+    path: /home_page_content
+    controller: App\Controller\AdminController::homePageContentAction
+
+add_home_page_content:
+    path: /add_home_page_content
+    controller: App\Controller\AdminController::addHomePageContentAction
+
+doctors_list:
+    path: /doctors_list
+    controller: App\Controller\DoctorsController::viewDoctorsList
+    methods:    POST|HEAD

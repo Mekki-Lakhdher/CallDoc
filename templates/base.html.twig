@@ -4,22 +4,45 @@
         <meta charset="UTF-8">
         {#Load bootstrap CDN#}
         <link rel="shortcut icon" href="img/Stethoscope.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link href="css/hover/css/hover.css" rel="stylesheet" media="all">
-        <title>{% block title %}CallDoc - Video consultation site{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>{% block title %}Docabins - Video consultation site{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+            <link href="css/hover/css/hover.css" rel="stylesheet" media="all">
+            <style>
+                html, body {
+                    height: 100%;
+                    margin: 0px;
+                }
+            </style>
+        {% endblock %}
     </head>
-    <body class="bg-light">
-        {% block body %}
+    {% block body %}
+    <body class="bg-light" style="height: 100%;">
 
             {% block navBar %}
             {#Navigation bar#}
                 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
                     <div class="d-flex w-50 order-0">
                         <a class="navbar-brand" href="{{ path('home') }}">
-                            <img src="{{ asset('img/CallDoc.png') }}">
-                            <span style="padding-left: 5%;">CallDoc</span>
+                            <img src="{{ asset('img/docabins.png') }}">
+                            <span style="padding-left: 5%;">Docabins</span>
                         </a>
+
+                        {#<div>
+                            {% if app.user %}
+                                {% if app.user.role=='ROLE_ADMIN' %}
+                                    Empty ads sections.
+                                {% elseif app.user.role=='ROLE_DOCTOR' %}
+                                    Advertisements of medical machines.
+                                {% elseif app.user.role=='ROLE_PATIENT' %}
+                                    Advertisements of doctors.
+                                {% endif %}
+                            {%  else %}
+                                Statistics about the site.
+                            {% endif %}
+                        </div>#}
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -47,15 +70,37 @@
                             {% endblock %}
 
                             {% block agenda %}
-                                {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_DOCTOR' ) %}
+                                {% if app.user and app.user.role=='ROLE_DOCTOR' %}
                                     <li class="nav-item active hvr-float hvr-underline-from-center">
                                         <a class="nav-link" href="{{ path('doctor_agenda') }}">Agenda<span class="sr-only">(current)</span></a>
                                     </li>
                                 {% endif %}
 
-                                {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_PATIENT' ) %}
+                                {% if app.user and app.user.role=='ROLE_PATIENT' %}
                                     <li class="nav-item active hvr-float hvr-underline-from-center">
                                         <a class="nav-link" href="{{ path('patient_agenda') }}">Agenda<span class="sr-only">(current)</span></a>
+                                    </li>
+                                {% endif %}
+
+                                {% if app.user and app.user.role=='ROLE_ADMIN' %}
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle active hvr-float hvr-underline-from-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Agenda
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="nav-link" href="{{ path('patient_agenda') }}" style="color: black;">Patient</a>
+                                            {#<div class="dropdown-divider"></div>#}
+                                            <a class="nav-link" href="{{ path('doctor_agenda') }}" style="color: black;">Doctor</a>
+                                        </div>
+                                    </li>
+                                {% endif %}
+
+                            {% endblock %}
+
+                            {% block administration_panel %}
+                                {% if app.user and app.user.role=='ROLE_ADMIN' %}
+                                    <li class="nav-item active hvr-float hvr-underline-from-center">
+                                        <a class="nav-link" href="{{ path('administration_panel') }}">Administration<span class="sr-only">(current)</span></a>
                                     </li>
                                 {% endif %}
                             {% endblock %}
@@ -66,11 +111,11 @@
                     <span class="navbar-text medium text-truncate mt-1 w-50 text-right order-1 order-md-last">
                         <form class=" my-2 my-lg-0" style="color: white;">
                         {% if not app.user %}
-                            <span>Navigate in the site ?</span>
+                            <span>Book appointment with a doctor ?</span>
                             <a class="link" style="color: white;padding-left: 2.5%;padding-right: 2.5%;" href="{{ path('app_register') }}">Sign up</a>
                             <a class="link" style="color: white;padding-left: 2.5%;padding-right: 2.5%;" href="{{ path('app_login') }}">Sign in</a>
                         {% else %}
-                            <span>Comeback soon, <a style="color: white;" class="link" href="{{ path('profile') }}">{{ app.user.getFirstName() }}<span class="sr-only">(current)</span></a> ?</span>
+                            <span>Already had your appointment, <a style="color: white;" class="link" href="{{ path('profile') }}">{{ app.user.getFirstName() }}<span class="sr-only">(current)</span></a> ?</span>
                             <a class="link" style="color: white;padding-left: 2.5%;padding-right: 2.5%;" href="{{ path('app_logout') }}">Sign out</a>
                         {% endif %}
                     </form>
@@ -79,32 +124,164 @@
             {% endblock %}
 
             {% block sitePresentation %}
-            {#Site presentation#}
-            <div class="jumbotron bg-light">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is the CallDoc web video consultaion site.</p>
-                <hr class="my-4">
-                <p>Make it quicker, simpler and fancier !</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </div>
+                {% for message in app.flashes('success') %}
+                    <div id="toast" class="w-100 flex-column p-4" style="z-index: 1;position: fixed;">
+                        <div class="toast ml-auto" role="alert" data-delay="700" data-autohide="true" aria-live="assertive" aria-atomic="true" class="toast" data-animation="false">
+                            <div class="toast-header">
+                                <strong class="mr-auto text-primary">Sign-in</strong>
+                                <small class="text-muted"></small>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="toast-body">Signed-in as {{ app.user }}</div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="container" style="padding: 0px;">
+                    <div class="row">
+                        {#Image column#}
+                        <div class="col-4">
+                            <div class="jumbotron bg-light">
+                                <div class="bg-light">
+                                    <img src="{{ asset('img/GirlVideoCallingDoctor.png') }}" style="margin-bottom: 2.5%;" class="img-fluid" alt="Girl video calling doctor">
+                                    {#First section#}
+                                    <div id="first_section">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Dr. Mohamed
+                                                    <img style="float: right;" src="{{ asset('img/Sponsored.png') }}">
+                                                </h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">Specialist in 'speciality'</h6>
+                                                <p class="card-text">
+                                                    Here is some advertissement text for the Dr. Ali, he is specialist in 'speciality' and he definitely can help you.
+                                                </p>
+                                                <a href="#" class="card-link">1st link</a>
+                                                <a href="#" class="card-link">2nd link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {#Site presentation column#}
+                        <div class="col-5">
+                            <div class="jumbotron bg-light">
+                                <h1 class="display-5">Docabins medical video consultations</h1>
+                                <p class="lead">
+                                    The Docabins web site now offer video consultations.</br>
+                                    Here is where you speak to a doctor, or healthcare professional, using the video camera in your{# smartphone, tablet or#} computer.
+                                </p>
+                                <hr class="my-4">
+                                <p>Make it quicker, simpler and fancier !</p>
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </div>
+                        </div>
+
+                        {#Ads column#}
+                        <div class="col-3">
+                            <div class="jumbotron bg-light">
+
+                                {#Second section#}
+                                <div id="second_section">
+                                    <div class="card" style="margin-bottom: 5%;">
+                                        <div class="card-body">
+                                            Advertissement for Dr. Salah.
+                                        </div>
+                                    </div>
+                                </div>
+                                {#Third section#}
+                                <div id="third_section">
+                                    <div class="card" style="margin-bottom: 5%;">
+                                        <div class="card-body">
+                                            Advertissement for Dr. Ismail.
+                                        </div>
+                                    </div>
+                                </div>
+                                {#Fourth section#}
+                                <div id="fourth_section">
+                                    <div class="card" style="margin-bottom: 5%;">
+                                        <div class="card-body">
+                                            Advertissement for Dr. Iskander.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container-fluid footer bg-primary" style="color: white;">
+                    <div class="spacer"></div>
+                    <div class="container d-flex justify-content-between py-4">
+                        <h5 class="my-auto">Docabins - Copyright © {{ "now"|date("Y") }}</h5>
+                        <ul class="nav flex-column flex-sm-row">
+                            <li class="nav-item">
+                                <a class="nav-link" href="" style="color: white;">Request an Estimate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" style="color: white;">Our Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" style="color: white;">Our Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" style="color: white;">Our Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" style="color: white;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spacer"></div>
+                </div>
             {% endblock %}
 
         {% endblock %}
-
+    </body>
         {#Load Javascript & JQuery CDNs#}
         {% block javascripts %}
-            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    bsCustomFileInput.init()
-                })
-            </script>
+
+            {% block javascript_cdns %}
+                <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+            {% endblock %}
+
+            {% block dropdown_togle %}
+                <script>
+                    $(document).ready(function () {
+                        $('.dropdown-toggle').dropdown()
+                    })
+                </script>
+            {% endblock %}
+
+            {% block toast %}
+                <script>
+                    $(document).ready(function () {
+                        setTimeout(function(){
+                            $('.toast').toast({ delay: 7000 });
+                            $('.toast').toast('show');
+                        }, 1000);
+                    })
+                </script>
+            {% endblock %}
+
+            {% block input_file_name %}
+                <script>
+                    $(document).ready(function () {
+                        bsCustomFileInput.init()
+                    })
+                </script>
+            {% endblock %}
+
         {% endblock %}
-    </body>
 </html>

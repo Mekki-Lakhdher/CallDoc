@@ -1,7 +1,6 @@
 /**
  * Created by Mekki on 30/09/2020.
  */
-
 /**
  * Specialities autocomplete.
  */

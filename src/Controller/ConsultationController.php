@@ -78,7 +78,7 @@ class ConsultationController extends AbstractController
             $entityManager->persist($consultation);
             $entityManager->flush();
         }
-        // Redirect to doctors page after saving
+        // Redirect to patients page after saving
         return $this->redirectToRoute('patients');
 
     }

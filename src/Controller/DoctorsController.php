@@ -36,6 +36,39 @@ class DoctorsController extends AbstractController
         return $this->render('doctors.html.twig', [
             'doctors' => $doctors
         ]);
+
+        return $this->render('doctors.html.twig');
+
+    }
+
+    public function viewDoctorsList(Request $request,PaginatorInterface $paginator)
+    {
+//        $doctor_name=$_POST['doctor_name'];
+//
+//        $speciality_name=$_POST['speciality_name'];
+//
+//        if ($doctor_name!='undefined')
+//        echo "doctor_name=".gettype($doctor_name);
+//        if ($speciality_name!='undefined')
+//        echo "speciality_name=".$speciality_name;
+//        //die();
+
+        $repository = $this->getDoctrine()
+            ->getRepository(User::class);
+        $data = $repository->findBy(
+            ['role' => 'ROLE_DOCTOR'],
+            ['first_name' => 'ASC']
+        );
+        $doctors = $paginator->paginate(
+            $data,
+            $request->query->getInt('page', 1),
+            10
+        );
+
+        return $this->render('doctors_list.html.twig', [
+            'doctors' => $doctors
+        ]);
+
     }
 
     public function scheduleAction(int $doctor_id,Request $request)
