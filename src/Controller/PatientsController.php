@@ -20,12 +20,19 @@ class PatientsController extends AbstractController
 
     public function indexAction(Request $request,PaginatorInterface $paginator)
     {
-        $repository = $this->getDoctrine()
-            ->getRepository(User::class);
-        $data = $repository->findBy(
-            ['role' => 'ROLE_PATIENT'],
-            ['first_name' => 'ASC']
-        );
+        // Initialize $patient_name
+        $patient_name="";
+        // If $patient_name is set for the first time
+        if (isset($_POST['patient_name']))
+        {
+            $patient_name=$_POST['patient_name'];
+            $_SESSION['patient_name']=$patient_name;
+        }
+        // If $patient_name is already set
+        if (isset($_SESSION['patient_name']))
+        {
+            $patient_name=$_SESSION['patient_name'];
+        }
 
         // Get logged user_id
         $user = $this->get('security.token_storage')->getToken()->getUser();
@@ -38,8 +45,7 @@ class PatientsController extends AbstractController
 
         $repository = $this->getDoctrine()
             ->getRepository(User::class);
-        $data=$repository->findPatientsWithTheirConsultations($user_id);
-
+        $data=$repository->findPatientsWithTheirConsultations($user_id,$patient_name);
         $patients = $paginator->paginate(
             $data,
             $request->query->getInt('page', 1),
@@ -48,6 +54,7 @@ class PatientsController extends AbstractController
 
         return $this->render('patients.html.twig', [
             'patients' => $patients,
+            'patient_name' => $patient_name,
             'asked_consultations' => $asked_consultations,
         ]);
 

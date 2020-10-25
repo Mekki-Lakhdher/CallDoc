@@ -21,12 +21,33 @@ class DoctorsController extends AbstractController
 
     public function indexAction(Request $request,PaginatorInterface $paginator)
     {
+        // Initialize $doctor_name and $doctor_speciality
+        $doctor_name=$doctor_speciality="";
+        // If $doctor_name and $doctor_speciality are set for the first time
+        if (isset($_POST['doctor_name']))
+        {
+            $doctor_name=$_POST['doctor_name'];
+            $_SESSION['doctor_name']=$doctor_name;
+        }
+        if (isset($_POST['doctor_speciality']))
+        {
+            $doctor_speciality=$_POST['doctor_speciality'];
+            $_SESSION['doctor_speciality']=$doctor_speciality;
+        }
+
+        // If $doctor_name and $doctor_speciality are already set
+        if (isset($_SESSION['doctor_name']))
+        {
+            $doctor_name=$_SESSION['doctor_name'];
+        }
+        if (isset($_SESSION['doctor_speciality']))
+        {
+            $doctor_speciality=$_SESSION['doctor_speciality'];
+        }
+
         $repository = $this->getDoctrine()
             ->getRepository(User::class);
-        $data = $repository->findBy(
-            ['role' => 'ROLE_DOCTOR'],
-            ['first_name' => 'ASC']
-        );
+        $data = $repository->findDoctorsBy($doctor_name,$doctor_speciality);
         $doctors = $paginator->paginate(
             $data,
             $request->query->getInt('page', 1),
@@ -34,7 +55,9 @@ class DoctorsController extends AbstractController
         );
 
         return $this->render('doctors.html.twig', [
-            'doctors' => $doctors
+            'doctors' => $doctors,
+            'doctor_name' => $doctor_name,
+            'doctor_speciality' => $doctor_speciality,
         ]);
 
         return $this->render('doctors.html.twig');

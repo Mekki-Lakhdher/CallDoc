@@ -21,8 +21,8 @@ function viewDoctorsList(doctor_name, speciality_name) {
     });
 }*/
 
-function viewDoctorSchedule(doctor_id,doctor_first_name,doctor_last_name) {
 
+function viewDoctorSchedule(doctor_id,doctor_first_name,doctor_last_name) {
     let url="/doctor_schedule/"+doctor_id;
     $.ajax({
         type: 'post',
@@ -34,3 +34,9 @@ function viewDoctorSchedule(doctor_id,doctor_first_name,doctor_last_name) {
         }
     });
 }
+
+function emptySearchFields() {
+    document.getElementById('doctor_name').value="";
+    document.getElementById('doctor_speciality').value="";
+}
+

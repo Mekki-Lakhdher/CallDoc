@@ -65,27 +65,28 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
     }
     */
 
-    public function findPatientsWithTheirConsultations($doctor_id): array
+    public function findPatientsWithTheirConsultations($doctor_id,$patient_name): array
     {
         $conn = $this->getEntityManager()->getConnection();
-
-        $sql = "
-        SELECT `first_name`,
+        $sql = "SELECT `first_name`,
                 `last_name`,
                 `phone_number`,
                 `email`,
                 `consultation`.`id` as `consultation_id`,
                 `consultation`.`confirmed`,
                 `consultation`.`canceled`
+                FROM `user`               
+                LEFT JOIN `consultation`             
+                ON `user`.`id`=`consultation`.`patient_id_id` AND `consultation`.`doctor_id_id`=:doctor_id               
+                WHERE `user`.`role`='ROLE_PATIENT'";
 
-FROM `user`
+        // Add condition on patient name if it's set
+        if ($patient_name!="") {
+            $sql=$sql." AND `user`.`first_name` LIKE'%$patient_name%' OR `user`.`last_name` LIKE'%$patient_name%'";
+        }
 
-LEFT JOIN `consultation`
 
-ON `user`.`id`=`consultation`.`patient_id_id` AND `consultation`.`doctor_id_id`=:doctor_id
 
-WHERE `user`.`role`='ROLE_PATIENT'
-        ";
         $stmt = $conn->prepare($sql);
         $stmt->execute(['doctor_id' => $doctor_id]);
         $result = $stmt->fetchAll();
@@ -93,6 +94,21 @@ WHERE `user`.`role`='ROLE_PATIENT'
         // returns an array of arrays (i.e. a raw data set)
         return $result;
 
+    }
+
+    public function findDoctorsBy($doctor_name,$doctor_speciality): array
+    {
+        return $this->createQueryBuilder('u')
+            ->andWhere('u.role = :role')
+            ->andWhere('u.first_name LIKE :doctor_name or u.last_name LIKE :doctor_name')
+            ->andWhere('u.speciality LIKE :doctor_speciality')
+            ->setParameter('role', 'ROLE_DOCTOR')
+            ->setParameter('doctor_name', '%'.$doctor_name.'%')
+            ->setParameter('doctor_speciality', '%'.$doctor_speciality.'%')
+            ->orderBy('u.first_name', 'ASC')
+            ->getQuery()
+            ->getResult()
+            ;
     }
 
 }
