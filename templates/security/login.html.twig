@@ -2,19 +2,19 @@
 
 {% block title %}Sign in{% endblock %}
 {% block head %}
-    {{ parent() }}
-    <style type="text/css">
-        .important { color: #336699; }
-    </style>
+    {% block stylesheets %}
+        {{ parent() }}
+        {{ encore_entry_link_tags('login') }}
+    {% endblock %}
 {% endblock %}
 {% block body %}
 {% block navBar %}
     {{ parent() }}
 {% endblock %}
-<div class="bg-light" style="height: 100%;">
+<div class="bg-light full_height">
 <div class="jumbotron bg-light">
     <form method="post">
-        <table class="mx-auto" style="width: 35%;">
+        <table class="mx-auto width_35">
 
             {% if error %}
                 <tr>
@@ -103,4 +103,11 @@
         </table>
     </form>
 </div></div>
+
+{% block javascripts %}
+
+    {{ encore_entry_script_tags('login') }}
+
+{% endblock %}
+
 {% endblock %}

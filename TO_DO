@@ -1,13 +1,30 @@
-Make the admin interfaces.
+How to verify the doctor on sign up ? Ask doctor to record a video using his webcam ( To verify his identity and the webcam. )
+
+Delete the administration panel.
 
 Make unit test using PHPUnit.
 
-Generate ssl certificate for the site to enable https connection and then enable access for media from other devices.
-
-Data exchange between 8000 and 3000 (localhost).
+PHP CS-Fixer.
 
 Log user activity.
 
 Add online payment.
+
+Logo.
+
+Hosting.
+
+Check video chat work.
+
+Other improvements referring to :
+    https://www.doctolib.fr/video_consultation?fbclid=IwAR01S92yGPA2M8xRq8fTf_1aqDaSTRf73A5eDMBNAqIT7oS_0LB9O4iJsFA
+    https://www.qare.fr/praticien/5ec50474030d98002ad0829d
+    https://www.mesdocteurs.com/accueil?fbclid=IwAR1AVKw7kYQAIGOUc-mklX2Mn27JJ1qldO_mmFESdBcE4vrhdbRkER_uGJo
+    https://sante247.ca/?fbclid=IwAR2dVid2Ay5WnJqxJCKmQzcylcKrZsK0QpQ0v8tLbAcJvJmDicUK7pgK7Eo
+    https://hellocare.com/blog/patients-3/?fbclid=IwAR0fyBcfSxh3XiOLE9FaPs9zXrcZH_T-uMFxOn68JYGHd_1xc2zWCUUqxz0
+
+Data exchange between 8000 and 3000 (localhost).
+
+Generate ssl certificate for the site to enable https connection and then enable access for media from other devices.
 
 Front end framework.

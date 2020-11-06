@@ -1,0 +1,52 @@
+{% extends "./base.html.twig" %}
+
+{% block title %}Profile{% endblock %}
+{% block head %}
+    {% block stylesheets %}
+        {{ parent() }}
+        {{ encore_entry_link_tags('show_profile') }}
+    {% endblock %}
+{% endblock %}
+{% block body %}
+    {% block navBar %}
+        {{ parent() }}
+    {% endblock %}
+    <div class="bg-light full_height">
+    <div class="jumbotron bg-light width_50_ml_15">
+
+        <table class="table">
+            <tr>
+                <th scope="col">First name</th>
+                <td>{{ user.getFirstname() }}</td>
+            </tr>
+            <tr>
+                <th scope="col">Last name</th>
+                <td>{{ user.getLastname() }}</td>
+            </tr>
+            <tr>
+                <th scope="col">Phone number</th>
+                <td>{{ user.getPhoneNumber() }}</td>
+            </tr>
+            <tr>
+                <th scope="col">Speciality</th>
+                <td>{{ user.getSpeciality() }}</td>
+            </tr>
+            <tr>
+                <th scope="col">E-mail</th>
+                <td>{{ user.getEmail() }}</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="btn btn-info">Edit profile</button>
+                </td>
+            </tr>
+        </table>
+    </div></div>
+    {% block javascript %}
+        {{ encore_entry_script_tags('show_profile') }}
+        {% block dropdown_toggle %}
+            {{ parent() }}
+        {% endblock %}
+    {% endblock %}
+
+{% endblock %}

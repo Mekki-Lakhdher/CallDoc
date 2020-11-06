@@ -40,3 +40,14 @@ function emptySearchFields() {
     document.getElementById('doctor_speciality').value="";
 }
 
+
+
+function showConsultationButton(doctor_id) {
+    document.getElementById('consultation_'+doctor_id).style.display="inline";
+}
+
+
+
+function hideConsultationButton(doctor_id) {
+    document.getElementById('consultation_'+doctor_id).style.display="none";
+}

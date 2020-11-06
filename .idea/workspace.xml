@@ -2,7 +2,317 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d38ce6-c912-4c6f-9dec-af992766e063" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/hover.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/logo-transparent.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/modern-slide-in.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/photo-stack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/sequence-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/two-up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/docabins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/sound/notification.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/sound/notification.ogg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.eslintrc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/docabins.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/consultation_confirmation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/doctor_schedule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/doctors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/patients.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/registration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/show_doctor_agenda.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/show_patients_agenda.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/show_profile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/consultation_confirmation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/doctor_schedule.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/doctors.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/home.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/HISTORY.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/demo-page.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/hover-min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/hover.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/hover.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/_hacks.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/_mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/_options.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_backward.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_bob.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_bounce-in.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_bounce-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_buzz-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_buzz.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_float.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_forward.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_grow-rotate.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_grow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_hang.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pop.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pulse-grow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pulse-shrink.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pulse.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_push.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_rotate.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_shrink.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_sink.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_skew-backward.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_skew-forward.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_skew.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-bottom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-horizontal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-skew.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-to-bottom-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-to-top-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-top.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-vertical.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_back-pulse.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-bottom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-top.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_fade.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_radial-in.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_radial-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_rectangle-in.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_rectangle-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-in-horizontal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-in-vertical.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-out-horizontal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-out-vertical.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-bottom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-top.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_border-fade.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_hollow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_outline-in.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_outline-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-from-center.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-from-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-from-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-reveal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_reveal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_ripple-in.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_ripple-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_round-corners.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_trim.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-from-center.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-from-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-from-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-reveal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-bottom-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-bottom-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-top-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-top-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-back.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-bob.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-bounce-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-bounce.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-buzz-out.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-buzz.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-down.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-drop.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-fade.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-float-away.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-float.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-forward.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-grow-rotate.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-grow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-hang.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pop.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pulse-grow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pulse-shrink.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pulse.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-push.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-rotate.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-shrink.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-sink-away.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-sink.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-spin.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-up.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-wobble-horizontal.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-wobble-vertical.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_box-shadow-inset.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_box-shadow-outset.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_float-shadow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_glow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_grow-shadow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_shadow-radial.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_shadow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-bottom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-bottom.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-top.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-left.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-right.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-top.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/hover.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/_hacks.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/_options.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_backward.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_bob.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_bounce-in.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_bounce-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_buzz-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_buzz.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_float.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_forward.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_grow-rotate.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_grow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_hang.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pulse-grow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pulse-shrink.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pulse.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_push.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_rotate.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_shrink.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_sink.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_skew-backward.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_skew-forward.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_skew.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-bottom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-horizontal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-skew.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-to-bottom-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-to-top-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-top.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-vertical.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_back-pulse.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-bottom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-top.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_fade.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_radial-in.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_radial-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_rectangle-in.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_rectangle-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-in-horizontal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-in-vertical.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-out-horizontal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-out-vertical.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-bottom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-top.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_border-fade.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_hollow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_outline-in.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_outline-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-from-center.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-from-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-from-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-reveal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_reveal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_ripple-in.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_ripple-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_round-corners.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_trim.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-from-center.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-from-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-from-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-reveal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-bottom-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-bottom-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-top-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-top-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-back.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-bob.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-bounce-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-bounce.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-buzz-out.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-buzz.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-down.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-drop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-fade.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-float-away.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-float.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-forward.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-grow-rotate.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-grow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-hang.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pulse-grow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pulse-shrink.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pulse.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-push.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-rotate.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-shrink.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-sink-away.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-sink.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-spin.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-up.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-wobble-horizontal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-wobble-vertical.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_box-shadow-inset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_box-shadow-outset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_float-shadow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_glow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_grow-shadow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_shadow-radial.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_shadow.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-bottom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-bottom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-top.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-left.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-right.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-top.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/hover.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/jquery.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/lightness.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/patients.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/registration.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/show_doctor_agenda.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/show_patients_agenda.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/show_profile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/administration_panel.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/doctors_list.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/home_page_content.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/show_doctor_agenda.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/show_patient_agenda.html.twig" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Controller/DoctorsController.php" afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Controller/PatientsController.php" afterPath="$PROJECT_DIR$/src/Controller/PatientController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/consultation_confirmation.html.twig" afterPath="$PROJECT_DIR$/templates/consultation/consultation_confirmation.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/doctor_schedule.html.twig" afterPath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/doctors.html.twig" afterPath="$PROJECT_DIR$/templates/doctor/doctors.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patients.html.twig" afterPath="$PROJECT_DIR$/templates/patient/patients.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/show_profile.html.twig" afterPath="$PROJECT_DIR$/templates/user/show_profile.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TO_DO" afterPath="$PROJECT_DIR$/TO_DO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/security.yaml" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.yaml" afterPath="$PROJECT_DIR$/config/routes.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/doctors.js" afterPath="$PROJECT_DIR$/public/js/doctors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ConsultationController.php" afterPath="$PROJECT_DIR$/src/Controller/ConsultationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/security/login.html.twig" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,6 +320,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" phpInterpreterId="d4944928-d44b-4ac3-b192-4bce347104d7">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>C:\composer\composer.phar</pharPath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -21,54 +335,73 @@
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="docabins" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".eslintrc.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log</find>
-      <find>connectToNewUser</find>
-      <find>asset</find>
-      <find>toast</find>
-      <find>play</find>
-      <find>bfla</find>
-      <find>C</find>
-      <find>Ca</find>
-      <find>Call</find>
-      <find>CallD</find>
-      <find>CallDo</find>
-      <find>agenda</find>
-      <find>CallDoc</find>
-      <find>docabi</find>
-      <find>girl</find>
-      <find>jquer</find>
-      <find>jquery</find>
-      <find>indexAction</find>
-      <find>#</find>
-      <find>showSchedule</find>
-      <find>modal-body</find>
-      <find>comeb</find>
-      <find>doctorSceduleModal</find>
-      <find>doctor_schedule</find>
-      <find>link</find>
-      <find>doctor</find>
-      <find>findPatientsWithTheirConsultations</find>
-      <find>placeholde</find>
-      <find>placehold</find>
-      <find>Repeating event</find>
+      <find>values</find>
+      <find>images</find>
+      <find>head</find>
+      <find>enable</find>
+      <find>s</find>
+      <find>st</find>
+      <find>sty</find>
+      <find>60</find>
+      <find>width: 100%;</find>
+      <find>text-align: right;</find>
+      <find>margin-top: 5%;</find>
+      <find>width: 50%;</find>
+      <find>width: 60%;</find>
+      <find>style</find>
+      <find>height: 100%;</find>
+      <find>width: 35%;</find>
+      <find>entry</find>
+      <find>style=</find>
+      <find>AskForConsultation_cell</find>
+      <find>pendi</find>
+      <find>save</find>
+      <find>&quot;lint&quot;:</find>
+      <find>eslintignore</find>
+      <find>e</find>
+      <find>es</find>
+      <find>eslin</find>
+      <find>eslint</find>
+      <find>eslint.</find>
+      <find>eslint.j</find>
+      <find>eslint.js</find>
     </findStrings>
     <replaceStrings>
       <replace>consultationConfirmationModal</replace>
       <replace>docabins</replace>
+      <replace>./base.html.twig</replace>
+      <replace>dropdown_toggle</replace>
+      <replace>class=&quot;width_50&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Apache24\htdocs\sarah_project\CallDoc\WebRTC</dir>
@@ -80,6 +413,10 @@
       <dir>C:\Apache24\htdocs\sarah_project\CallDoc</dir>
       <dir>C:\Apache24\htdocs\my_project\CallDoc</dir>
       <dir>C:\Apache24\htdocs\my_project\docabins\src\Controller</dir>
+      <dir>C:\Apache24\htdocs\my_project\docabins\src</dir>
+      <dir>C:\Apache24\htdocs\my_project\docabins\templates</dir>
+      <dir>C:\Apache24\htdocs\my_project\docabins\node_modules</dir>
+      <dir>C:\Apache24\htdocs\my_project\docabins</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -93,57 +430,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/symfony/form/Extension/Core/Type/TextType.php" />
-        <option value="$PROJECT_DIR$/src/Form/SpecialitySelectTextType.php" />
-        <option value="$PROJECT_DIR$/src/Controller/DoctorSpecialityController.php" />
-        <option value="$PROJECT_DIR$/src/Repository/DoctorSpecialistTitleRepository.php" />
-        <option value="$PROJECT_DIR$/src/Controller/DoctorSpecialityTitleController.php" />
-        <option value="$PROJECT_DIR$/public/css/lightness.css" />
-        <option value="$PROJECT_DIR$/vendor/symfony/form/Extension/Core/Type/DateType.php" />
-        <option value="$PROJECT_DIR$/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" />
-        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
-        <option value="$PROJECT_DIR$/templates/home_page_content.html.twig.html" />
-        <option value="$PROJECT_DIR$/public/js/administration_panel.js" />
-        <option value="$PROJECT_DIR$/src/Form/HomePageContentFormType.php" />
-        <option value="$PROJECT_DIR$/src/Entity/HomePageContent.php" />
-        <option value="$PROJECT_DIR$/templates/home_page_content.html.twig" />
-        <option value="$PROJECT_DIR$/templates/administration_panel.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
-        <option value="$PROJECT_DIR$/src/Repository/ConsultationRepository.php" />
-        <option value="$PROJECT_DIR$/TO_DO" />
-        <option value="$PROJECT_DIR$/public/css/registration.css" />
-        <option value="$PROJECT_DIR$/public/css/jquery.min.css" />
-        <option value="$PROJECT_DIR$/templates/registration/register.html.twig" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" />
-        <option value="$PROJECT_DIR$/templates/show_profile.html.twig" />
-        <option value="$PROJECT_DIR$/src/Form/RegistrationFormType.php" />
-        <option value="$PROJECT_DIR$/public/js/registration.js" />
-        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Entity/DoctorSpecialistTitle.php" />
-        <option value="$PROJECT_DIR$/WebRTC/READ_ME.md" />
-        <option value="$PROJECT_DIR$/WebRTC/public/script.js" />
-        <option value="$PROJECT_DIR$/src/Controller/ConsultationController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/WebRTC/views/room.ejs" />
-        <option value="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/es-abstract/package.json" />
-        <option value="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/es-to-primitive/package.json" />
-        <option value="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/function-bind/package.json" />
-        <option value="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/has-symbols/package.json" />
-        <option value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bulma_pagination.html.twig" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/config/routes.yaml" />
-        <option value="$PROJECT_DIR$/templates/doctors_list.html.twig" />
-        <option value="$PROJECT_DIR$/public/js/doctors.js" />
-        <option value="$PROJECT_DIR$/src/Controller/DoctorsController.php" />
-        <option value="$PROJECT_DIR$/public/js/patients.js" />
-        <option value="$PROJECT_DIR$/src/Controller/PatientsController.php" />
-        <option value="$PROJECT_DIR$/src/Repository/UserRepository.php" />
-        <option value="$PROJECT_DIR$/templates/doctors.html.twig" />
-        <option value="$PROJECT_DIR$/templates/show_patient_agenda.html.twig" />
         <option value="$PROJECT_DIR$/templates/show_doctor_agenda.html.twig" />
-        <option value="$PROJECT_DIR$/templates/patients.html.twig" />
+        <option value="$PROJECT_DIR$/templates/show_patient_agenda.html.twig" />
+        <option value="$PROJECT_DIR$/assets/app.js" />
+        <option value="$PROJECT_DIR$/assets/test.js" />
+        <option value="$PROJECT_DIR$/assets/styles/app.css" />
+        <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/DoctorController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/PatientController.php" />
+        <option value="$PROJECT_DIR$/config/routes.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/assets/styles/test.css" />
+        <option value="$PROJECT_DIR$/assets/styles/home.css" />
+        <option value="$PROJECT_DIR$/assets/dropdown-toggle.js" />
+        <option value="$PROJECT_DIR$/assets/dropdown_toggle.js" />
+        <option value="$PROJECT_DIR$/public/build/entrypoints.json" />
+        <option value="$PROJECT_DIR$/assets/styles/consultation_confirmation.css" />
+        <option value="$PROJECT_DIR$/assets/styles/doctor_schedule.css" />
+        <option value="$PROJECT_DIR$/assets/show_doctor_agenda.js" />
+        <option value="$PROJECT_DIR$/assets/styles/show_doctor_agenda.css" />
+        <option value="$PROJECT_DIR$/assets/show_patients_agenda.js" />
+        <option value="$PROJECT_DIR$/assets/registration.js" />
+        <option value="$PROJECT_DIR$/src/Controller/ConsultationController.php" />
+        <option value="$PROJECT_DIR$/assets/styles/jquery.min.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/assets/home.js" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/assets/styles/registration.css" />
+        <option value="$PROJECT_DIR$/templates/registration/register.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/assets/login.js" />
+        <option value="$PROJECT_DIR$/assets/styles/login.css" />
+        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/assets/show_profile.js" />
+        <option value="$PROJECT_DIR$/assets/styles/show_profile.css" />
+        <option value="$PROJECT_DIR$/templates/user/show_profile.html.twig" />
+        <option value="$PROJECT_DIR$/assets/doctors.js" />
+        <option value="$PROJECT_DIR$/templates/doctor/doctors.html.twig" />
+        <option value="$PROJECT_DIR$/assets/styles/doctors.css" />
+        <option value="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" />
+        <option value="$PROJECT_DIR$/assets/doctor_schedule.js" />
+        <option value="$PROJECT_DIR$/assets/consultation_confirmation.js" />
+        <option value="$PROJECT_DIR$/templates/consultation/consultation_confirmation.html.twig" />
+        <option value="$PROJECT_DIR$/assets/patients.js" />
+        <option value="$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig" />
+        <option value="$PROJECT_DIR$/assets/styles/patients.css" />
+        <option value="$PROJECT_DIR$/templates/patient/patients.html.twig" />
+        <option value="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" />
+        <option value="$PROJECT_DIR$/TO_DO" />
+        <option value="$PROJECT_DIR$/WebRTC/node_modules/express/package.json" />
+        <option value="$PROJECT_DIR$/.eslintrc.js" />
       </list>
     </option>
   </component>
@@ -160,7 +497,115 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/notifier" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -208,7 +653,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,22 +665,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docabins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docabins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,27 +675,30 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="C:\Apache24\htdocs\sarah_project\CallDoc\WebRTC" />
+    <property name="node.js.selected.package.eslint" value="C:\Apache24\htdocs\my_project\docabins\node_modules\eslint" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.selected.package.standard" value="C:\Apache24\htdocs\sarah_project\CallDoc\WebRTC" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="node.js.selected.package.standard" value="C:\Apache24\htdocs\my_project\docabins\node_modules\eslint" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\public\js" />
-      <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\src\Security\EventListener" />
-      <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\src\Form" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\my_project\docabins\assets\styles" />
+      <recent name="C:\Apache24\htdocs\my_project\docabins\assets" />
       <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\templates" />
       <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\WebRTC" />
       <recent name="C:\Apache24\htdocs\sarah_project\CallDoc" />
-      <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\src\Controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\my_project\docabins\templates\user" />
+      <recent name="C:\Apache24\htdocs\my_project\docabins\templates\doctor" />
+      <recent name="C:\Apache24\htdocs\my_project\docabins\templates\patient" />
+      <recent name="C:\Apache24\htdocs\my_project\docabins\templates\consultation" />
+      <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\public\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -430,7 +864,22 @@
       <workItem from="1603397035745" duration="7660000" />
       <workItem from="1603484879994" duration="5589000" />
       <workItem from="1603560429119" duration="4237000" />
-      <workItem from="1603637888163" duration="456000" />
+      <workItem from="1603637888163" duration="7825000" />
+      <workItem from="1603819639903" duration="8907000" />
+      <workItem from="1603897776543" duration="4654000" />
+      <workItem from="1603915123472" duration="5822000" />
+      <workItem from="1603969527837" duration="1604000" />
+      <workItem from="1604003950188" duration="5711000" />
+      <workItem from="1604074641617" duration="2108000" />
+      <workItem from="1604092531851" duration="3806000" />
+      <workItem from="1604159850496" duration="8655000" />
+      <workItem from="1604173012437" duration="1254000" />
+      <workItem from="1604243934494" duration="16082000" />
+      <workItem from="1604431727807" duration="1330000" />
+      <workItem from="1604506428785" duration="6429000" />
+      <workItem from="1604599463392" duration="9911000" />
+      <workItem from="1604675462777" duration="8679000" />
+      <workItem from="1604692414047" duration="1252000" />
     </task>
     <task id="LOCAL-00001" summary="24/08/2020">
       <created>1598303508962</created>
@@ -502,31 +951,47 @@
       <option name="project" value="LOCAL" />
       <updated>1603638343749</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="25-10-2020">
+      <created>1603638352463</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603638352463</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442649000" />
+    <option name="totallyTimeSpent" value="536222000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7135843" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31089258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7070376" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7070376" sideWeight="0.49394855" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7070376" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7643208" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -534,12 +999,12 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7135843" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7135843" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7135843" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34871408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7070376" sideWeight="0.49394855" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912253" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -551,6 +1016,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -572,401 +1063,345 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRTC/.idea/WebRTC.iml">
+    <entry file="file://$PROJECT_DIR$/assets/styles/hover.css" />
+    <entry file="file://$PROJECT_DIR$/assets/styles/hover/css/hover.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRTC/public/script.js">
+    <entry file="file://$PROJECT_DIR$/public/build/entrypoints.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="250">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/doctors.html.twig">
+    <entry file="file://$PROJECT_DIR$/assets/dropdown_toggle.js" />
+    <entry file="file://$PROJECT_DIR$/templates/doctor/index.html.twig" />
+    <entry file="file://$PROJECT_DIR$/assets/styles/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="43" />
+        <state relative-caret-position="27">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/DoctorSpecialistTitle.php">
+    <entry file="file://$PROJECT_DIR$/assets/styles/doctor_schedule.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="100">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DoctorsController.php">
+    <entry file="file://$PROJECT_DIR$/assets/styles/show_doctor_agenda.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="477">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/patients.html.twig">
+    <entry file="file://$PROJECT_DIR$/assets/styles/show_patients_agenda.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        <state relative-caret-position="474">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_patient_agenda.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_doctor_agenda.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRTC/READ_ME.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/DoctorSpecialistTitle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRTC/READ_ME.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRTC/.idea/WebRTC.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRTC/public/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/RegistrationFormType.php">
+    <entry file="file://$PROJECT_DIR$/assets/show_patients_agenda.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
-          <caret line="49" column="37" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="49" selection-end-column="37" />
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/doctor_schedule.html.twig">
+    <entry file="file://$PROJECT_DIR$/public/css/registration.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/lightness.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/DoctorSpecialistTitleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687">
-          <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/ConsultationRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1125">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/HomePageContentRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-812">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ConsultationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="80" column="31" lean-forward="false" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="31" />
+        <state relative-caret-position="427">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Consultation.php">
+    <entry file="file://$PROJECT_DIR$/assets/styles/jquery.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="992" column="32" lean-forward="false" selection-start-line="991" selection-start-column="0" selection-end-line="994" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/config/packages/webpack_encore.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-487">
+        <state relative-caret-position="-237">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Security/EventListener/ActivityListener.php">
+    <entry file="file://$PROJECT_DIR$/assets/registration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-1">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Security/EventListener/RequestListener.php">
+    <entry file="file://$PROJECT_DIR$/assets/styles/registration.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DoctorSpecialityTitleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRTC/views/room.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/es-abstract/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/es-to-primitive/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/function-bind/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/node_modules/has-symbols/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TO_DO">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bulma_pagination.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="410">
+          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/registration/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="363" column="61" lean-forward="true" selection-start-line="363" selection-start-column="4" selection-end-line="363" selection-end-column="61" />
+        <state relative-caret-position="75">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/src/Twig/Extension/PaginationExtension.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        <state relative-caret-position="175">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-components/src/Knp/Component/Pager/PaginatorInterface.php">
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/ApcCache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        <state relative-caret-position="128">
+          <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/doctors_list.html.twig">
+    <entry file="file://$PROJECT_DIR$/assets/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="14" />
+        <state relative-caret-position="50">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+    <entry file="file://$PROJECT_DIR$/assets/styles/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        <state relative-caret-position="50">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/show_profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <caret line="37" column="52" lean-forward="false" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/show_profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/show_profile.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="249" column="35" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/persistence/lib/Doctrine/Persistence/ObjectRepository.php">
+    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="-800">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/doctors.js">
+    <entry file="file://$PROJECT_DIR$/assets/styles/doctors.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/patients.js">
+    <entry file="file://$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="277">
+          <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DoctorsController.php">
+    <entry file="file://$PROJECT_DIR$/assets/show_doctor_agenda.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/doctor/doctors.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/consultation_confirmation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="45" column="9" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
-          <folding />
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PatientsController.php">
+    <entry file="file://$PROJECT_DIR$/assets/styles/consultation_confirmation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="56" column="43" lean-forward="false" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
+    <entry file="file://$PROJECT_DIR$/templates/consultation/consultation_confirmation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="84" column="27" lean-forward="false" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+        <state relative-caret-position="-637">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/patients.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="92" lean-forward="false" selection-start-line="4" selection-start-column="92" selection-end-line="4" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/patients.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="166" lean-forward="false" selection-start-line="6" selection-start-column="166" selection-end-line="6" selection-end-column="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/patient/patients.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="69" column="60" lean-forward="false" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TO_DO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/doctors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/doctor_schedule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRTC/node_modules/express/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="146" column="23" lean-forward="false" selection-start-line="146" selection-start-column="23" selection-end-line="146" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="64" column="10" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="64" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/.bin/eslint">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/eslint/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding>
-            <marker date="1603561861447" expanded="true" signature="2214:2734" ph="SELECT `firs... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/doctors.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="65" column="61" lean-forward="false" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_patient_agenda.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-562">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_doctor_agenda.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5750">
-          <caret line="230" column="56" lean-forward="false" selection-start-line="230" selection-start-column="56" selection-end-line="230" selection-end-column="56" />
-          <folding>
-            <marker date="1603575466784" expanded="false" signature="18680:269375" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="27893:27910" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="30953:30970" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="44204:44214" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="99797:99837" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="101567:101577" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="105527:105544" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="123544:123589" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="123806:123846" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="123978:123988" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="124288:124305" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="125181:125243" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="125375:125419" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="125588:125628" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="125776:125786" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="126571:126588" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="128353:128363" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="132109:132126" ph="..." />
-            <marker date="1603575466784" expanded="true" signature="256482:256509" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/patients.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="40" />
-          <folding>
-            <element signature="e#3012#3033#0#HTML" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>

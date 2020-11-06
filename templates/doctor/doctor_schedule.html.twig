@@ -1,0 +1,92 @@
+{{ encore_entry_link_tags('doctor_schedule') }}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <td>
+            <input type="text" id="dp1" class="datepicker" placeholder="Pick Date" name="date" readonly onchange="fillDate(this);"><span class="fa fa-calendar"></span>
+        </td>
+    </tr>
+    <tr>
+        <th>Hour</th>
+        <td width="100%">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="8" onclick="fillHour(this.value)">08:00 - 09:00</button>
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="9" onclick="fillHour(this.value)">09:00 - 10:00</button>
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="10" onclick="fillHour(this.value)">10:00 - 11:00</button>
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="11" onclick="fillHour(this.value)">11:00 - 12:00</button>
+            </div>
+            </br>
+            </br>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="13" onclick="fillHour(this.value)">13:00 - 14:00</button>
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="14" onclick="fillHour(this.value)">14:00 - 15:00</button>
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="15" onclick="fillHour(this.value)">15:00 - 16:00</button>
+                <button type="button" class="btn btn-info doctor_schedule_hour" value="16" onclick="fillHour(this.value)">16:00 - 17:00</button>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>
+            <textarea></textarea>
+        </td>
+    </tr>
+</table>
+
+{{ form_start(form,{'action': 'save_consultation'}) }}
+    <table class="real_form-table">
+        <tr>
+            <td>Patient</td>
+            <td>{{ form_errors(form.patient_id) }}</td>
+            <td>{{ form_widget(form.patient_id, {'value' : app.user.id}) }}</td>
+        </tr>
+        <tr>
+            <td>Doctor</td>
+            <td>{{ form_errors(form.doctor_id) }}</td>
+            <td>{{ form_widget(form.doctor_id, {'value' : doctor_id}) }}</td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>{{ form_errors(form.date) }}</td>
+            <td>{{ form_widget(form.date) }}</td>
+        </tr>
+        <tr>
+            <td>Asked</td>
+            <td>{{ form_errors(form.asked) }}</td>
+            <td>{{ form_widget(form.asked, {'value' : 1}) }}</td>
+        </tr>
+        <tr>
+            <td>Confirmed</td>
+            <td>{{ form_errors(form.confirmed) }}</td>
+            <td>{{ form_widget(form.confirmed, {'value' : 0}) }}</td>
+        </tr>
+        <tr>
+            <td>Canceled</td>
+            <td>{{ form_errors(form.canceled) }}</td>
+            <td>{{ form_widget(form.canceled, {'value' : 0}) }}</td>
+        </tr>
+        <tr>
+            <td>{{ form_widget(form.confirm) }}</td>
+            <td></td>
+            <td>{{ form_widget(form.cancel) }}</td>
+        </tr>
+    </table>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="submit" class="btn btn-primary">Save demand</button>
+</div>
+
+{{ form_end(form) }}
+
+{{ encore_entry_script_tags('doctor_schedule') }}
+<script>
+    // Set patient and doctor ids
+    document.getElementById("consultation_form_patient_id").value={{ app.user.id }};
+    document.getElementById("consultation_form_doctor_id").value={{ doctor_id }};
+</script>

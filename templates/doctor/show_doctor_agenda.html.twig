@@ -1,0 +1,109 @@
+{% extends "./base.html.twig" %}
+
+{% block title %}Profile{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('show_doctor_agenda') }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.css">
+{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block body %}
+    {% block navBar %}
+        {{ parent() }}
+    {% endblock %}
+
+<div class="bg-light main_div">
+
+    <div class="d-flex justify-content-center calendar_container">
+        <div id='calendar' class="calendar_div"></div>
+    </div>
+
+</div>
+
+    {% block javascripts %}
+        {% block javascript_cdns %}
+            {{ parent() }}
+            <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.js"></script>
+        {% endblock %}
+        {% block dropdown_toggle %}
+            {{ parent() }}
+        {% endblock %}
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var calendarEl = document.getElementById('calendar');
+
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    initialDate:  new Date(),
+                    headerToolbar: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                    },
+                    dateClick: function(info) {
+                        alert('Clicked on: ' + info.dateStr);
+                        alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+                        alert('Current view: ' + info.view.type);
+                        // change the day's background color just for fun
+                        //info.dayEl.style.backgroundColor = 'red';
+                    },
+                    eventClick: function(info) {
+                        alert('Event: ' + info.event.title);
+                        alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+                        alert('View: ' + info.view.type);
+
+                        // change the border color just for fun
+                        //info.el.style.borderColor = 'red';
+                    },
+
+                    events: [
+                        {% for consultation in consultations %}
+                            {
+                                allDay: 0,
+                                title: '{{ consultation.getPatientId()|e }}',
+                                start: '{{ consultation.getDate()|date("Y-m-d H:00:s") }}',
+                                end: '{{ consultation.getDate()|date_modify("+1 hour")|date("Y-m-d H:00:s") }}',
+                            },
+                        {% endfor %}
+                    ]
+
+                });
+                calendar.render();
+            });
+
+        </script>
+    {% endblock %}
+
+{% endblock %}
+
+{% block javascript %}
+
+    {{ encore_entry_link_tags('show_doctor_agenda') }}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

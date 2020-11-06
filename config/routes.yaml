@@ -8,15 +8,15 @@ login_success:
 
 doctors:
     path: /doctors
-    controller: App\Controller\DoctorsController::indexAction
+    controller: App\Controller\DoctorController::indexAction
 
 patients:
     path: /patients
-    controller: App\Controller\PatientsController::indexAction
+    controller: App\Controller\PatientController::indexAction
 
 doctor_schedule:
     path: /doctor_schedule/{doctor_id}
-    controller: App\Controller\DoctorsController::scheduleAction
+    controller: App\Controller\DoctorController::scheduleAction
     methods:    POST|HEAD
 
 save_consultation:
@@ -40,25 +40,8 @@ profile:
 
 doctor_agenda:
     path: /doctor_agenda
-    controller: App\Controller\UserController::showDoctorAgendaAction
+    controller: App\Controller\DoctorController::showDoctorAgendaAction
 
 patient_agenda:
     path: /patient_agenda
-    controller: App\Controller\UserController::showPatientAgendaAction
-
-administration_panel:
-    path: /administration_panel
-    controller: App\Controller\AdminController::showAdminPanelAction
-
-home_page_content:
-    path: /home_page_content
-    controller: App\Controller\AdminController::homePageContentAction
-
-add_home_page_content:
-    path: /add_home_page_content
-    controller: App\Controller\AdminController::addHomePageContentAction
-
-doctors_list:
-    path: /doctors_list
-    controller: App\Controller\DoctorsController::viewDoctorsList
-    methods:    POST|HEAD
+    controller: App\Controller\PatientController::showPatientAgendaAction

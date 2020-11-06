@@ -44,7 +44,7 @@ class ConsultationController extends AbstractController
 
         $form = $this->createForm(ConsultationFormType::class, $consultation);
 
-        return $this->render('consultation_confirmation.html.twig', [
+        return $this->render('consultation/consultation_confirmation.html.twig', [
             'consultation' => $consultation,
             'form' => $form->createView(),
             'consultation_id' => $consultation_id,
@@ -62,15 +62,6 @@ class ConsultationController extends AbstractController
             ->find($consultation_id);
         $form = $this->createForm(ConsultationFormType::class, $consultation);
         $form->handleRequest($request);
-
-//        $confirm_button = $form->get('confirm')->isClicked();
-//        $cancel_button = $form->get('cancel')->isClicked();
-//        if ($confirm_button) {
-//            echo "confirmation clicked";
-//        }
-//        if ($cancel_button) {
-//            echo "cancel clicked";
-//        }
 
         if ($form->isSubmitted() && $form->isValid()) {
             $consultation = $form->getData();

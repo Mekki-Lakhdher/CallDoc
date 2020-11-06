@@ -1,0 +1,41 @@
+/* assets/styles/app.css */
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+.site-name {
+    padding-left: 5%;
+}
+
+.dropdown-item {
+    color: black;
+    margin: 0px;
+}
+
+.interaction-form {
+    color: white;
+}
+
+.interaction-form-element {
+    color: white;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.user-name {
+    color: white;
+}
+
+.toast-position {
+    z-index: 1;
+    position: fixed;
+}
+
+.core-container {
+    padding: 0px;
+}
+
+.GirlVideoCallingDoctor-img {
+    margin-bottom: 2.5%;
+}
