@@ -4,6 +4,11 @@
 
 import './styles/doctor_schedule.css';
 
+document.getElementById('description_field').onkeyup = function(){
+    document.getElementById("description_length").innerHTML=this.value.length;
+    document.getElementById("consultation_form_description").value=this.value;
+}
+
 $(document).ready(function(){
 
     $('.datepicker').datepicker({
@@ -38,7 +43,23 @@ function fillDate (date_object) {
 }
 
 function fillHour (hour) {
+    addSelectedHourButtonBorder('btn_'+hour);
     document.getElementById("consultation_form_date_time_hour").value=hour;
+}
+
+function addSelectedHourButtonBorder (id) {
+    // Remove non selected buttons border
+    var i;
+    for (i = 8; i <= 16; i++) {
+        if (i === 12) {continue;}
+        document.getElementById("btn_"+i).style.border="";
+        document.getElementById("btn_"+i).style.zIndex = 0;
+    }
+    // Add border to the selected button
+    document.getElementById(id).style.borderWidth="1px";
+    document.getElementById(id).style.borderColor="black";
+    // Make button on top of other buttons
+    document.getElementById(id).style.zIndex = 1;
 }
 
 window.fillDate=fillDate;

@@ -2,317 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d38ce6-c912-4c6f-9dec-af992766e063" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/hover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/logo-transparent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/modern-slide-in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/photo-stack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/sequence-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/two-up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/docabins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/sound/notification.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/sound/notification.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.eslintrc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/docabins.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/consultation_confirmation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/doctor_schedule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/doctors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/patients.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/registration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/show_doctor_agenda.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/show_patients_agenda.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/show_profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/consultation_confirmation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/doctor_schedule.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/doctors.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/HISTORY.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/demo-page.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/hover-min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/hover.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/css/hover.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/_hacks.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/_mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/_options.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_backward.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_bob.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_bounce-in.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_bounce-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_buzz-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_buzz.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_float.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_forward.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_grow-rotate.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_grow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_hang.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pop.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pulse-grow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pulse-shrink.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_pulse.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_push.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_rotate.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_shrink.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_sink.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_skew-backward.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_skew-forward.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_skew.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-bottom.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-horizontal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-skew.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-to-bottom-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-to-top-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-top.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/2d-transitions/_wobble-vertical.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_back-pulse.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-bottom.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_bounce-to-top.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_fade.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_radial-in.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_radial-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_rectangle-in.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_rectangle-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-in-horizontal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-in-vertical.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-out-horizontal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_shutter-out-vertical.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-bottom.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/background-transitions/_sweep-to-top.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_border-fade.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_hollow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_outline-in.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_outline-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-from-center.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-from-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-from-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_overline-reveal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_reveal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_ripple-in.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_ripple-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_round-corners.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_trim.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-from-center.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-from-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-from-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/border-transitions/_underline-reveal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-bottom-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-bottom-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-top-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/curls/_curl-top-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-back.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-bob.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-bounce-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-bounce.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-buzz-out.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-buzz.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-down.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-drop.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-fade.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-float-away.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-float.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-forward.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-grow-rotate.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-grow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-hang.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pop.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pulse-grow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pulse-shrink.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-pulse.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-push.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-rotate.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-shrink.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-sink-away.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-sink.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-spin.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-up.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-wobble-horizontal.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/icons/_icon-wobble-vertical.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_box-shadow-inset.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_box-shadow-outset.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_float-shadow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_glow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_grow-shadow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_shadow-radial.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/shadow-and-glow-transitions/_shadow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-bottom.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-bottom.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-float-top.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-left.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-right.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/effects/speech-bubbles/_bubble-top.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/less/hover.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/_hacks.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/_options.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_backward.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_bob.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_bounce-in.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_bounce-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_buzz-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_buzz.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_float.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_forward.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_grow-rotate.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_grow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_hang.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pop.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pulse-grow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pulse-shrink.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_pulse.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_push.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_rotate.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_shrink.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_sink.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_skew-backward.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_skew-forward.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_skew.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-bottom.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-horizontal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-skew.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-to-bottom-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-to-top-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-top.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/2d-transitions/_wobble-vertical.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_back-pulse.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-bottom.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_bounce-to-top.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_fade.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_radial-in.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_radial-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_rectangle-in.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_rectangle-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-in-horizontal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-in-vertical.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-out-horizontal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_shutter-out-vertical.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-bottom.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/background-transitions/_sweep-to-top.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_border-fade.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_hollow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_outline-in.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_outline-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-from-center.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-from-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-from-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_overline-reveal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_reveal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_ripple-in.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_ripple-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_round-corners.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_trim.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-from-center.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-from-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-from-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/border-transitions/_underline-reveal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-bottom-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-bottom-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-top-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/curls/_curl-top-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-back.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-bob.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-bounce-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-bounce.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-buzz-out.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-buzz.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-down.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-drop.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-fade.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-float-away.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-float.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-forward.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-grow-rotate.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-grow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-hang.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pop.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pulse-grow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pulse-shrink.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-pulse.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-push.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-rotate.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-shrink.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-sink-away.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-sink.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-spin.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-up.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-wobble-horizontal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/icons/_icon-wobble-vertical.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_box-shadow-inset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_box-shadow-outset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_float-shadow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_glow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_grow-shadow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_shadow-radial.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/shadow-and-glow-transitions/_shadow.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-bottom.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-bottom.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-float-top.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-left.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-right.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/effects/speech-bubbles/_bubble-top.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/hover/scss/hover.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/jquery.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/lightness.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/patients.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/registration.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/show_doctor_agenda.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/show_patients_agenda.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/show_profile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yarn.lock" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/administration_panel.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/doctors_list.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/home_page_content.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/show_doctor_agenda.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/show_patient_agenda.html.twig" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Controller/DoctorsController.php" afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Controller/PatientsController.php" afterPath="$PROJECT_DIR$/src/Controller/PatientController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/consultation_confirmation.html.twig" afterPath="$PROJECT_DIR$/templates/consultation/consultation_confirmation.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/doctor_schedule.html.twig" afterPath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/doctors.html.twig" afterPath="$PROJECT_DIR$/templates/doctor/doctors.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/patients.html.twig" afterPath="$PROJECT_DIR$/templates/patient/patients.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/show_profile.html.twig" afterPath="$PROJECT_DIR$/templates/user/show_profile.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/RepLog/RepLogApp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/RepLog/RepLogList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/RepLog/RepLogs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/rep_log_react.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="$PROJECT_DIR$/.eslintrc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/docabins.iml" afterPath="$PROJECT_DIR$/.idea/docabins.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TO_DO" afterPath="$PROJECT_DIR$/TO_DO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/doctor_schedule.js" afterPath="$PROJECT_DIR$/assets/doctor_schedule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/doctor_schedule.css" afterPath="$PROJECT_DIR$/assets/styles/doctor_schedule.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/security.yaml" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.yaml" afterPath="$PROJECT_DIR$/config/routes.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/doctors.js" afterPath="$PROJECT_DIR$/public/js/doctors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ConsultationController.php" afterPath="$PROJECT_DIR$/src/Controller/ConsultationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Consultation.php" afterPath="$PROJECT_DIR$/src/Entity/Consultation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/ConsultationFormType.php" afterPath="$PROJECT_DIR$/src/Form/ConsultationFormType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/security/login.html.twig" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" afterPath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -340,14 +49,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".eslintrc.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <file leaf-file-name="doctor_schedule.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="377">
+              <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding>
-                <element signature="e#0#42#0" expanded="false" />
+                <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doctor_schedule.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/doctor_schedule.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsultationFormType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Form/ConsultationFormType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -365,14 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>values</find>
-      <find>images</find>
-      <find>head</find>
-      <find>enable</find>
-      <find>s</find>
-      <find>st</find>
-      <find>sty</find>
-      <find>60</find>
       <find>width: 100%;</find>
       <find>text-align: right;</find>
       <find>margin-top: 5%;</find>
@@ -381,7 +102,6 @@
       <find>style</find>
       <find>height: 100%;</find>
       <find>width: 35%;</find>
-      <find>entry</find>
       <find>style=</find>
       <find>AskForConsultation_cell</find>
       <find>pendi</find>
@@ -395,6 +115,15 @@
       <find>eslint.</find>
       <find>eslint.j</find>
       <find>eslint.js</find>
+      <find>preset</find>
+      <find>class</find>
+      <find>body</find>
+      <find>default</find>
+      <find>selected</find>
+      <find>entry</find>
+      <find>ask</find>
+      <find>nulla</find>
+      <find>xxx</find>
     </findStrings>
     <replaceStrings>
       <replace>consultationConfirmationModal</replace>
@@ -402,6 +131,7 @@
       <replace>./base.html.twig</replace>
       <replace>dropdown_toggle</replace>
       <replace>class=&quot;width_50&quot;</replace>
+      <replace>className</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Apache24\htdocs\sarah_project\CallDoc\WebRTC</dir>
@@ -430,13 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/show_doctor_agenda.html.twig" />
-        <option value="$PROJECT_DIR$/templates/show_patient_agenda.html.twig" />
-        <option value="$PROJECT_DIR$/assets/app.js" />
-        <option value="$PROJECT_DIR$/assets/test.js" />
-        <option value="$PROJECT_DIR$/assets/styles/app.css" />
-        <option value="$PROJECT_DIR$/src/Controller/HomeController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/DoctorController.php" />
         <option value="$PROJECT_DIR$/src/Controller/PatientController.php" />
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
@@ -446,31 +169,24 @@
         <option value="$PROJECT_DIR$/assets/dropdown_toggle.js" />
         <option value="$PROJECT_DIR$/public/build/entrypoints.json" />
         <option value="$PROJECT_DIR$/assets/styles/consultation_confirmation.css" />
-        <option value="$PROJECT_DIR$/assets/styles/doctor_schedule.css" />
         <option value="$PROJECT_DIR$/assets/show_doctor_agenda.js" />
         <option value="$PROJECT_DIR$/assets/styles/show_doctor_agenda.css" />
         <option value="$PROJECT_DIR$/assets/show_patients_agenda.js" />
         <option value="$PROJECT_DIR$/assets/registration.js" />
-        <option value="$PROJECT_DIR$/src/Controller/ConsultationController.php" />
         <option value="$PROJECT_DIR$/assets/styles/jquery.min.css" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/assets/home.js" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/assets/styles/registration.css" />
         <option value="$PROJECT_DIR$/templates/registration/register.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/assets/login.js" />
         <option value="$PROJECT_DIR$/assets/styles/login.css" />
         <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/assets/show_profile.js" />
         <option value="$PROJECT_DIR$/assets/styles/show_profile.css" />
         <option value="$PROJECT_DIR$/templates/user/show_profile.html.twig" />
         <option value="$PROJECT_DIR$/assets/doctors.js" />
         <option value="$PROJECT_DIR$/templates/doctor/doctors.html.twig" />
         <option value="$PROJECT_DIR$/assets/styles/doctors.css" />
-        <option value="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" />
-        <option value="$PROJECT_DIR$/assets/doctor_schedule.js" />
         <option value="$PROJECT_DIR$/assets/consultation_confirmation.js" />
         <option value="$PROJECT_DIR$/templates/consultation/consultation_confirmation.html.twig" />
         <option value="$PROJECT_DIR$/assets/patients.js" />
@@ -480,7 +196,21 @@
         <option value="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" />
         <option value="$PROJECT_DIR$/TO_DO" />
         <option value="$PROJECT_DIR$/WebRTC/node_modules/express/package.json" />
+        <option value="$PROJECT_DIR$/assets/home.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
+        <option value="$PROJECT_DIR$/assets/js/rep_log_react.js" />
+        <option value="$PROJECT_DIR$/assets/js/RepLog/RepLogList.js" />
+        <option value="$PROJECT_DIR$/assets/js/RepLog/RepLogs.js" />
+        <option value="$PROJECT_DIR$/assets/js/RepLog/RepLogApp.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/assets/styles/doctor_schedule.css" />
+        <option value="$PROJECT_DIR$/src/Controller/ConsultationController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Consultation.php" />
+        <option value="$PROJECT_DIR$/src/Form/RegistrationFormType.php" />
+        <option value="$PROJECT_DIR$/src/Form/ConsultationFormType.php" />
+        <option value="$PROJECT_DIR$/assets/doctor_schedule.js" />
+        <option value="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" />
       </list>
     </option>
   </component>
@@ -604,6 +334,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
       <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/notifier" />
+      <path value="$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -665,6 +396,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docabins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docabins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -680,7 +425,7 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="C:\Apache24\htdocs\my_project\docabins\node_modules\eslint" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/eslint" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -879,7 +624,14 @@
       <workItem from="1604506428785" duration="6429000" />
       <workItem from="1604599463392" duration="9911000" />
       <workItem from="1604675462777" duration="8679000" />
-      <workItem from="1604692414047" duration="1252000" />
+      <workItem from="1604692414047" duration="1371000" />
+      <workItem from="1604694145922" duration="2776000" />
+      <workItem from="1604748505478" duration="19509000" />
+      <workItem from="1604805962702" duration="781000" />
+      <workItem from="1604940806776" duration="7419000" />
+      <workItem from="1605023833560" duration="1062000" />
+      <workItem from="1605027125804" duration="4731000" />
+      <workItem from="1605115121016" duration="4276000" />
     </task>
     <task id="LOCAL-00001" summary="24/08/2020">
       <created>1598303508962</created>
@@ -958,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1603638352463</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="06-11-2020">
+      <created>1604693848746</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604693848746</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536222000" />
+    <option name="totallyTimeSpent" value="576895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,18 +733,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31089258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7070376" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7070376" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.700491" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1056,65 +816,25 @@
     <MESSAGE value="01-10-2020" />
     <MESSAGE value="23-10-2020" />
     <MESSAGE value="25-10-2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="25-10-2020" />
+    <MESSAGE value="06-11-2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="06-11-2020" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/RepLog/RepLogApp.js</url>
+          <line>3</line>
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/styles/hover.css" />
-    <entry file="file://$PROJECT_DIR$/assets/styles/hover/css/hover.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/entrypoints.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/dropdown_toggle.js" />
-    <entry file="file://$PROJECT_DIR$/templates/doctor/index.html.twig" />
-    <entry file="file://$PROJECT_DIR$/assets/styles/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/doctor_schedule.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/show_doctor_agenda.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/show_patients_agenda.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/show_patients_agenda.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/registration.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1126,13 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ConsultationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1213,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="37" column="27" lean-forward="false" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-          <caret line="37" column="52" lean-forward="false" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/show_profile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1235,13 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="53" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-800">
@@ -1253,13 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1340,24 +1031,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/doctors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="925">
           <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/doctor_schedule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1396,12 +1073,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="50">
+          <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/RepLog/RepLogList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/RepLog/RepLogs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/RepLog/RepLogApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/rep_log_react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="2" selection-end-line="132" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/doctor_schedule.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="88" column="59" lean-forward="false" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/RegistrationFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1375">
+          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Consultation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ConsultationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/ConsultationFormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/doctor_schedule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
-            <element signature="e#0#42#0" expanded="false" />
+            <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

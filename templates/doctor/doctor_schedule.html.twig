@@ -8,38 +8,37 @@
     <tr>
         <th>Date</th>
         <td>
-            <input type="text" id="dp1" class="datepicker" placeholder="Pick Date" name="date" readonly onchange="fillDate(this);"><span class="fa fa-calendar"></span>
+            <input style="border-width:1px;" type="text" id="dp1" class="datepicker" placeholder="Pick Date" name="date" readonly onchange="fillDate(this);"><span class="fa fa-calendar"></span>
         </td>
     </tr>
     <tr>
         <th>Hour</th>
-        <td width="100%">
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="8" onclick="fillHour(this.value)">08:00 - 09:00</button>
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="9" onclick="fillHour(this.value)">09:00 - 10:00</button>
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="10" onclick="fillHour(this.value)">10:00 - 11:00</button>
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="11" onclick="fillHour(this.value)">11:00 - 12:00</button>
+        <td style="width: 100%;">
+            <div style="float: left;" class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" style="background-color: #99c2ff;" class="btn doctor_schedule_hour" value="8" id="btn_8" onclick="fillHour(this.value)">08:00 - 09:00</button>
+                <button type="button" style="background-color: #cce0ff;" class="btn doctor_schedule_hour" value="9" id="btn_9" onclick="fillHour(this.value)">09:00 - 10:00</button>
+                <button type="button" style="background-color: #99c2ff;" class="btn doctor_schedule_hour" value="10" id="btn_10" onclick="fillHour(this.value)">10:00 - 11:00</button>
+                <button type="button" style="background-color: #cce0ff;" class="btn doctor_schedule_hour" value="11" id="btn_11" onclick="fillHour(this.value)">11:00 - 12:00</button>
             </div>
-            </br>
-            </br>
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="13" onclick="fillHour(this.value)">13:00 - 14:00</button>
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="14" onclick="fillHour(this.value)">14:00 - 15:00</button>
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="15" onclick="fillHour(this.value)">15:00 - 16:00</button>
-                <button type="button" class="btn btn-info doctor_schedule_hour" value="16" onclick="fillHour(this.value)">16:00 - 17:00</button>
+            <div style="float: right;" class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" style="background-color: #99c2ff;" class="btn doctor_schedule_hour" value="13" id="btn_13" onclick="fillHour(this.value)">13:00 - 14:00</button>
+                <button type="button" style="background-color: #cce0ff;" class="btn doctor_schedule_hour" value="14" id="btn_14" onclick="fillHour(this.value)">14:00 - 15:00</button>
+                <button type="button" style="background-color: #99c2ff;" class="btn doctor_schedule_hour" value="15" id="btn_15" onclick="fillHour(this.value)">15:00 - 16:00</button>
+                <button type="button" style="background-color: #cce0ff;" class="btn doctor_schedule_hour" value="16" id="btn_16" onclick="fillHour(this.value)">16:00 - 17:00</button>
             </div>
         </td>
     </tr>
     <tr>
         <th>Description</th>
         <td>
-            <textarea></textarea>
+            <textarea maxlength="3000" placeholder="Describe your case." style="width: 100%;border-radius:3px;" id="description_field"></textarea>
+            <strong style="float: right;"><strong id="description_length">0</strong> / 3000</strong>
         </td>
     </tr>
 </table>
 
 {{ form_start(form,{'action': 'save_consultation'}) }}
-    <table class="real_form-table">
+    <table style="display: none;">
         <tr>
             <td>Patient</td>
             <td>{{ form_errors(form.patient_id) }}</td>
@@ -62,8 +61,13 @@
         </tr>
         <tr>
             <td>Confirmed</td>
-            <td>{{ form_errors(form.confirmed) }}</td>
-            <td>{{ form_widget(form.confirmed, {'value' : 0}) }}</td>
+            <td>{{ form_errors(form.patient_id) }}</td>
+            <td>{{ form_widget(form.confirmed, {'value' : app.user.id}) }}</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>{{ form_errors(form.description) }}</td>
+            <td>{{ form_widget(form.description) }}</td>
         </tr>
         <tr>
             <td>Canceled</td>

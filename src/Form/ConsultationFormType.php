@@ -4,11 +4,15 @@ namespace App\Form;
 
 use App\Entity\Consultation;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\DateTime;
 
 class ConsultationFormType extends AbstractType
 {
@@ -26,6 +30,13 @@ class ConsultationFormType extends AbstractType
                 'label' => 'Cancel',
                 'attr' => array('class' => 'btn btn-danger'),
                 ])
+            ->add('description',TextareaType::class,
+                [
+                    'attr' => array(
+                    'placeholder' => 'Describe your case.',
+
+                ),]
+            )
         ;
     }
 

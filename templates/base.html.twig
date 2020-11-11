@@ -126,6 +126,12 @@
     </nav>
 {% endblock %}
 
+{#<div class="row">#}
+    {#<div id="lift-stuff-app"></div>#}
+{#</div>#}
+{#<br><br><br><br><br><br>#}
+{#<hr />#}
+
 {% block sitePresentation %}
     {% for message in app.flashes('success') %}
         <div id="toast" class="toast-position w-100 flex-column p-4">
@@ -204,7 +210,9 @@
 {#Load Javascript & JQuery CDNs#}
 {% block javascripts %}
 
-{{ encore_entry_script_tags('home') }}
+    {{ encore_entry_script_tags('home') }}
+    {#{{ encore_entry_script_tags('rep_log_react') }}#}
+
 
 {% block javascript_cdns %}
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

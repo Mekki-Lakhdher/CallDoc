@@ -49,6 +49,11 @@ class Consultation
      */
     private $doctor_id;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $description;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -122,6 +127,18 @@ class Consultation
     public function setDoctorId(?User $doctor_id): self
     {
         $this->doctor_id = $doctor_id;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }

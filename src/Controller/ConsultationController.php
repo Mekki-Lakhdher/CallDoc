@@ -22,7 +22,6 @@ class ConsultationController extends AbstractController
         $consultation = new Consultation();
         $form = $this->createForm(ConsultationFormType::class, $consultation);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $consultation = $form->getData();
             $entityManager = $this->getDoctrine()->getManager();
