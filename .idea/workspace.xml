@@ -613,7 +613,7 @@
       <workItem from="1605023833560" duration="1062000" />
       <workItem from="1605027125804" duration="4731000" />
       <workItem from="1605115121016" duration="4946000" />
-      <workItem from="1605285824062" duration="932000" />
+      <workItem from="1605285824062" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="24/08/2020">
       <created>1598303508962</created>
@@ -706,11 +706,18 @@
       <option name="project" value="LOCAL" />
       <updated>1605119822439</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="13-11-2020">
+      <created>1605287700645</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605287700645</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="578497000" />
+    <option name="totallyTimeSpent" value="578524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,6 +730,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20499243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -806,7 +814,8 @@
     <MESSAGE value="25-10-2020" />
     <MESSAGE value="06-11-2020" />
     <MESSAGE value="11-11-2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="11-11-2020" />
+    <MESSAGE value="13-11-2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="13-11-2020" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
