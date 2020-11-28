@@ -45,3 +45,22 @@ doctor_agenda:
 patient_agenda:
     path: /patient_agenda
     controller: App\Controller\PatientController::showPatientAgendaAction
+
+doctor_consultations:
+    path: /doctor_consultations
+    controller: App\Controller\ConsultationController::getDoctorConsultationsAction
+    methods:    POST|HEAD|GET
+
+patient_consultations:
+    path: /patient_consultations
+    controller: App\Controller\ConsultationController::getPatientConsultationsAction
+
+view_patient_consultation:
+    path: /view_patient_consultation/{consultation_id}
+    controller: App\Controller\ConsultationController::viewPatientConsultationAction
+    options:
+        expose: true
+
+edit_patient_consultation:
+    path: /edit_patient_consultation/{consultation_id}
+    controller: App\Controller\ConsultationController::editPatientConsultationAction

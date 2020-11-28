@@ -63,4 +63,35 @@ class ConsultationRepository extends ServiceEntityRepository
 
     }
 
+    public function findConsultationsBy($connected_patient,$doctor_name): array
+    {
+        $conn=$this->getEntityManager()->getConnection();
+        $sql="
+            SELECT
+	            `consultation`.`id` as consultation_id,
+                `consultation`.`date` as consultation_date,
+                `consultation`.`asked` as consultation_asked,
+                `consultation`.`confirmed` as consultation_confirmed,
+                `consultation`.`canceled` as consultation_canceled,
+                CONCAT( `user`.`first_name`,' ', `user`.`last_name` ) as consultation_doctor,
+                `consultation`.`description` as consultation_description
+            FROM 
+                `consultation` 
+            LEFT JOIN 
+                `user` 
+            ON 
+                `consultation`.`doctor_id_id`=`user`.`id` 
+            WHERE 
+                `user`.`first_name` LIKE '%$doctor_name%'
+            AND 
+                `consultation`.`patient_id_id`=$connected_patient;";
+
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+
+        // returns an array of arrays (i.e. a raw data set)
+        return $result;
+    }
+
 }

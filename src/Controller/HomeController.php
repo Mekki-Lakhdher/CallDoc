@@ -23,7 +23,8 @@ class HomeController extends AbstractController
 
     public function loginAction()
     {
-        $this->addFlash('success','');
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        $this->addFlash('success','Signed in as '.$user.'.');
         return $this->redirectToRoute('home');
     }
 

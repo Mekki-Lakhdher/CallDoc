@@ -481,7 +481,6 @@ class User implements UserInterface, Serializable
     public function setGender(string $gender): self
     {
         $this->gender = $gender;
-
         return $this;
     }
 

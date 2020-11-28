@@ -1,259 +1,279 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="img/Stethoscope.png" type="image/x-icon">
-    {#<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>#}
-    <title>
-        {% block title %}Docabins - Video consultation site{% endblock %}
-    </title>
-    {% block stylesheets %}
-        {{ encore_entry_link_tags('home') }}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-              integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-              crossorigin="anonymous">
-        {#<link href="css/hover/css/hover.css" rel="stylesheet" media="all">#}
+    {% block head %}
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/Stethoscope.png" type="image/x-icon">
+        {#<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>#}
+        <title>{% block title %}Docabins - Video consultation site{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('home') }}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+                  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+                  crossorigin="anonymous">
+            {#<link href="css/hover/css/hover.css" rel="stylesheet" media="all">#}
+        {% endblock %}
     {% endblock %}
 </head>
-{% block body %}
-<body class="bg-light">
 
-{% block navBar %}
-    {#Navigation bar#}
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <div class="d-flex w-50 order-0">
-            <a class="navbar-brand" href="{{ path('home') }}">
-                <img src="{{ asset('img/docabins.png') }}">
-                <span class="site-name ">Docabins</span>
-            </a>
+<body class="bg-light d-flex flex-column min-vh-100" style="height: 1000px;">
+    {% block body %}
 
-            {#<div>
-                {% if app.user %}
-                    {% if app.user.role=='ROLE_ADMIN' %}
-                        Empty ads sections.
-                    {% elseif app.user.role=='ROLE_DOCTOR' %}
-                        Advertisements of medical machines.
-                    {% elseif app.user.role=='ROLE_PATIENT' %}
-                        Advertisements of doctors.
-                    {% endif %}
-                {%  else %}
-                    Statistics about the site.
-                {% endif %}
-            </div>#}
+        {% block body_header %}
+            <header>
+                {% block navigation_bar %}
+                <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                    <div class="d-flex w-50 order-0">
+                        <a class="navbar-brand" href="{{ path('home') }}">
+                            <img src="{{ asset('img/docabins.png') }}">
+                            <span class="site-name ">Docabins</span>
+                        </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item active hvr-float hvr-underline-from-center">
-                    <a class="nav-link" href="{{ path('home') }}">Home<span class="sr-only">(current)</span></a>
-                </li>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                                </div>
+                                <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item active hvr-float hvr-underline-from-center">
+                                            <a class="nav-link" href="{{ path('home') }}">Home<span class="sr-only">(current)</span></a>
+                                        </li>
 
-                {% block doctor %}
-                    {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_PATIENT' ) %}
-                        <li class="nav-item active hvr-float hvr-underline-from-center">
-                            <a class="nav-link" href="{{ path('doctors') }}">Doctors<span
-                                        class="sr-only">(current)</span></a>
-                        </li>
-                    {% endif %}
-                {% endblock %}
+                                        {% block doctor %}
+                                            {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_PATIENT' ) %}
+                                                <li class="nav-item active hvr-float hvr-underline-from-center">
+                                                    <a class="nav-link" href="{{ path('doctors') }}">Doctors<span
+                                                                class="sr-only">(current)</span></a>
+                                                </li>
+                                            {% endif %}
+                                        {% endblock %}
 
-                {% block patient %}
-                    {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_DOCTOR' ) %}
-                        <li class="nav-item active hvr-float hvr-underline-from-center">
-                            <a class="nav-link" href="{{ path('patients') }}">Patients<span
-                                        class="sr-only">(current)</span></a>
-                        </li>
-                    {% endif %}
-                {% endblock %}
+                                        {% block patient %}
+                                            {% if app.user and ( app.user.role=='ROLE_ADMIN' or app.user.role=='ROLE_DOCTOR' ) %}
+                                                <li class="nav-item active hvr-float hvr-underline-from-center">
+                                                    <a class="nav-link" href="{{ path('patients') }}">Patients<span
+                                                                class="sr-only">(current)</span></a>
+                                                </li>
+                                            {% endif %}
+                                        {% endblock %}
 
-                {% block agenda %}
-                    {% if app.user and app.user.role=='ROLE_DOCTOR' %}
-                        <li class="nav-item active hvr-float hvr-underline-from-center">
-                            <a class="nav-link" href="{{ path('doctor_agenda') }}">Agenda<span
-                                        class="sr-only">(current)</span></a>
-                        </li>
-                    {% endif %}
+                                        {% block agenda %}
+                                            {% if app.user and app.user.role=='ROLE_DOCTOR' %}
+                                                <li class="nav-item active hvr-float hvr-underline-from-center">
+                                                    <a class="nav-link" href="{{ path('doctor_agenda') }}">Agenda<span
+                                                                class="sr-only">(current)</span></a>
+                                                </li>
+                                            {% endif %}
 
-                    {% if app.user and app.user.role=='ROLE_PATIENT' %}
-                        <li class="nav-item active hvr-float hvr-underline-from-center">
-                            <a class="nav-link" href="{{ path('patient_agenda') }}">Agenda<span class="sr-only">(current)</span></a>
-                        </li>
-                    {% endif %}
+                                            {% if app.user and app.user.role=='ROLE_PATIENT' %}
+                                                <li class="nav-item active hvr-float hvr-underline-from-center">
+                                                    <a class="nav-link" href="{{ path('patient_agenda') }}">Agenda<span class="sr-only">(current)</span></a>
+                                                </li>
+                                            {% endif %}
 
-                    {% if app.user and app.user.role=='ROLE_ADMIN' %}
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active hvr-float hvr-underline-from-center" href="#"
-                               id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false">
-                                Agenda
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="nav-link" href="{{ path('patient_agenda') }}">
-                                    <span class="dropdown-item">Patient</span>
-                                </a>
-                                {#<div class="dropdown-divider"></div>#}
-                                <a class="nav-link" href="{{ path('doctor_agenda') }}">
-                                    <span class="dropdown-item">Doctor</span>
-                                </a>
-                            </div>
-                        </li>
-                    {% endif %}
+                                            {% if app.user and app.user.role=='ROLE_ADMIN' %}
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle active hvr-float hvr-underline-from-center" href="#"
+                                                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                       aria-expanded="false">
+                                                        Agenda
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <a class="nav-link" href="{{ path('patient_agenda') }}">
+                                                            <span class="dropdown-item">Patient</span>
+                                                        </a>
+                                                        #}
+                        <div class="dropdown-divider"></div>
 
-                {% endblock %}
+                                                        <a class="nav-link" href="{{ path('doctor_agenda') }}">
+                                                            <span class="dropdown-item">Doctor</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            {% endif %}
 
-            </ul>
-        </div>
+                                        {% endblock %}
+
+                                        {% block consultations %}
+                                            {% if app.user and app.user.role=='ROLE_DOCTOR' %}
+                                                <li class="nav-item active hvr-float hvr-underline-from-center">
+                                                    <a class="nav-link" href="{{ path('doctor_consultations') }}">Consultations<span
+                                                                class="sr-only">(current)</span></a>
+                                                </li>
+                                            {% endif %}
+
+                                            {% if app.user and app.user.role=='ROLE_PATIENT' %}
+                                                <li class="nav-item active hvr-float hvr-underline-from-center">
+                                                    <a class="nav-link" href="{{ path('patient_consultations') }}">Consultations<span class="sr-only">(current)</span></a>
+                                                </li>
+                                            {% endif %}
+
+                                            {% if app.user and app.user.role=='ROLE_ADMIN' %}
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle active hvr-float hvr-underline-from-center" href="#"
+                                                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                       aria-expanded="false">
+                                                        Consultations
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <a class="nav-link" href="{{ path('patient_consultations') }}">
+                                                            <span class="dropdown-item">Patient</span>
+                                                        </a>
+                                                        #}
+                        <div class="dropdown-divider"></div>
+
+                                                        <a class="nav-link" href="{{ path('doctor_consultations') }}">
+                                                            <span class="dropdown-item">Doctor</span>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            {% endif %}
+
+                                        {% endblock %}
+
+                                    </ul>
+                                </div>
 
 
-        <span class="navbar-text medium text-truncate mt-1 w-50 text-right order-1 order-md-last">
-            <form class="interaction-form my-2 my-lg-0">
-                {% if not app.user %}
-                    <span>Book appointment with a doctor ?</span>
-                    <a class="link interaction-form-element" href="{{ path('app_register') }}">Sign up</a>
-                    <a class="link interaction-form-element" href="{{ path('app_login') }}">Sign in</a>
-                {% else %}
-                    <span>Already had your appointment, <a class="link user-name"
-                                                           href="{{ path('profile') }}">{{ app.user.getFirstName() }}
-                            <span class="sr-only">(current)</span></a> ?</span>
-                    <a class="link interaction-form-element" href="{{ path('app_logout') }}">Sign out</a>
-                {% endif %}
-            </form>
-        </span>
+                                <span class="navbar-text medium text-truncate mt-1 w-50 text-right order-1 order-md-last">
+                                    <form class="interaction-form my-2 my-lg-0">
+                                        {% if not app.user %}
+                                            <a class="link interaction-form-element" href="{{ path('app_register') }}">Sign up</a>
+                                            <a class="link interaction-form-element" href="{{ path('app_login') }}">Sign in</a>
+                                        {% else %}
+                                            <a class="link interaction-form-element" href="{{ path('app_logout') }}">Sign out</a>
+                                        {% endif %}
+                                    </form>
+                                </span>
 
-    </nav>
-{% endblock %}
+                            </nav>
+                        {% endblock %}
+            </header>
+        {% endblock %}
 
-{#<div class="row">#}
-    {#<div id="lift-stuff-app"></div>#}
-{#</div>#}
-{#<br><br><br><br><br><br>#}
-{#<hr />#}
-
-{% block sitePresentation %}
-    {% for message in app.flashes('success') %}
-        <div id="toast" class="toast-position w-100 flex-column p-4">
-            <div class="toast ml-auto" role="alert" data-delay="700" data-autohide="true" aria-live="assertive"
-                 aria-atomic="true" class="toast" data-animation="false">
-                <div class="toast-header">
-                    <strong class="mr-auto text-primary">Sign-in</strong>
-                    <small class="text-muted"></small>
-                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="toast-body">Signed-in as {{ app.user }}</div>
-            </div>
-        </div>
-    {% endfor %}
-    <div class="container core-container">
-        <div class="row">
-            {#Image column#}
-            <div class="col-4">
-                <div class="jumbotron bg-light">
-                    <div class="bg-light">
-                        <img src="{{ asset('img/GirlVideoCallingDoctor.png') }}"
-                             class="img-fluid GirlVideoCallingDoctor-img" alt="Girl video calling doctor">
+        {% block body_content %}
+            <div style="height:1000px;">
+            {%  block toast_messages %}
+                {% for message in app.flashes('success') %}
+                <div id="toast" class="toast-position w-100 flex-column p-4">
+                    <div class="toast ml-auto" role="alert" data-delay="700" data-autohide="true" aria-live="assertive"
+                         aria-atomic="true" class="toast" data-animation="false">
+                        <div class="toast-header">
+                            <strong class="mr-auto text-primary">Sign-in</strong>
+                            <small class="text-muted"></small>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">{{ message }}</div>
                     </div>
                 </div>
+            {% endfor %}
+            {% endblock %}
+            <div class="container core-container">
+                <div class="row">
+                        <div class="col-4">
+                            <div class="jumbotron bg-light">
+                                <div class="bg-light">
+                                    <img src="{{ asset('img/GirlVideoCallingDoctor.png') }}"
+                                         class="img-fluid GirlVideoCallingDoctor-img" alt="Girl video calling doctor">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="jumbotron bg-light">
+                                <h1 class="display-5">Docabins medical video consultations</h1>
+                                <p class="lead">
+                                    The Docabins web site now offer video consultations.</br>
+                                    Here is where you speak to a doctor, or healthcare professional, using the video camera in
+                                    your computer.
+                                </p>
+                                <hr class="my-4">
+                                <p>Make it quicker, simpler and fancier !</p>
+                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div></div>
+        {% endblock %}
+
+        {% block body_footer %}
+            <footer class="mt-auto bg-primary text-white">
+            <div class="spacer"></div>
+            <div class="container d-flex justify-content-between py-4">
+                <h5 class="my-auto">Docabins - Copyright © {{ "now"|date("Y") }}</h5>
+                <ul class="nav flex-column flex-sm-row">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="">Our clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="">Contact us</a>
+                    </li>
+                </ul>
             </div>
+            <div class="spacer"></div>
+        </footer>
+        {% endblock %}
 
-            {#Site presentation column#}
-            <div class="col-5">
-                <div class="jumbotron bg-light">
-                    <h1 class="display-5">Docabins medical video consultations</h1>
-                    <p class="lead">
-                        The Docabins web site now offer video consultations.</br>
-                        Here is where you speak to a doctor, or healthcare professional, using the video camera in
-                        your{# smartphone, tablet or#} computer.
-                    </p>
-                    <hr class="my-4">
-                    <p>Make it quicker, simpler and fancier !</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </div>
-            </div>
+        {% block javascripts %}
 
-        </div>
+        {{ encore_entry_script_tags('home') }}
 
-    </div>
+    {% block popovers %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+    {%  endblock %}
 
-    <div class="container-fluid footer bg-primary interaction-form">
-        <div class="spacer"></div>
-        <div class="container d-flex justify-content-between py-4">
-            <h5 class="my-auto">Docabins - Copyright © {{ "now"|date("Y") }}</h5>
-            <ul class="nav flex-column flex-sm-row">
-                <li class="nav-item">
-                    <a class="nav-link interaction-form" href="">Request an Estimate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link interaction-form" href="">Our Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link interaction-form" href="">Our Clients</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link interaction-form" href="">Our Story</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link interaction-form" href="">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="spacer"></div>
-    </div>
-{% endblock %}
+    {% block javascript_cdns %}
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    {% endblock %}
 
-{% endblock %}
+    {% block dropdown_toggle %}
+        <script>
+            $(document).ready(function () {
+                $('.dropdown-toggle').dropdown()
+            })
+        </script>
+    {% endblock %}
+
+    {% block toast %}
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $('.toast').toast({delay: 7000});
+                    $('.toast').toast('show');
+                }, 1000);
+            })
+        </script>
+    {% endblock %}
+
+    {% block input_file_name %}
+        <script>
+            $(document).ready(function () {
+                bsCustomFileInput.init()
+            })
+        </script>
+    {% endblock %}
+
+    {% endblock %}
+
+    {% endblock %}
 </body>
-{#Load Javascript & JQuery CDNs#}
-{% block javascripts %}
 
-    {{ encore_entry_script_tags('home') }}
-    {#{{ encore_entry_script_tags('rep_log_react') }}#}
-
-
-{% block javascript_cdns %}
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
-{% endblock %}
-
-{% block dropdown_toggle %}
-    <script>
-        $(document).ready(function () {
-            $('.dropdown-toggle').dropdown()
-        })
-    </script>
-{% endblock %}
-
-{% block toast %}
-    <script>
-        $(document).ready(function () {
-            setTimeout(function () {
-                $('.toast').toast({delay: 7000});
-                $('.toast').toast('show');
-            }, 1000);
-        })
-    </script>
-{% endblock %}
-
-{% block input_file_name %}
-    <script>
-        $(document).ready(function () {
-            bsCustomFileInput.init()
-        })
-    </script>
-{% endblock %}
-
-{% endblock %}
 </html>

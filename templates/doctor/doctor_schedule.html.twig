@@ -61,8 +61,8 @@
         </tr>
         <tr>
             <td>Confirmed</td>
-            <td>{{ form_errors(form.patient_id) }}</td>
-            <td>{{ form_widget(form.confirmed, {'value' : app.user.id}) }}</td>
+            <td>{{ form_errors(form.confirmed) }}</td>
+            <td>{{ form_widget(form.confirmed, {'value' : 0}) }}</td>
         </tr>
         <tr>
             <td>Description</td>

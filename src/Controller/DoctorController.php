@@ -44,10 +44,11 @@ class DoctorController extends AbstractController
         {
             $doctor_speciality=$_SESSION['doctor_speciality'];
         }
-
+        $user = $this->get('security.token_storage')->getToken()->getUser();
         $repository = $this->getDoctrine()
             ->getRepository(User::class);
         $data = $repository->findDoctorsBy($doctor_name,$doctor_speciality);
+
         $doctors = $paginator->paginate(
             $data,
             $request->query->getInt('page', 1),
@@ -55,6 +56,7 @@ class DoctorController extends AbstractController
         );
 
         return $this->render('doctor/doctors.html.twig', [
+            'user' => $user,
             'doctors' => $doctors,
             'doctor_name' => $doctor_name,
             'doctor_speciality' => $doctor_speciality,

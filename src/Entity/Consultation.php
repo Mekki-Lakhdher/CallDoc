@@ -23,7 +23,7 @@ class Consultation
     private $date;
 
     /**
-     * @ORM\Column(type="binary")
+     * @ORM\Column(type="integer")
      */
     private $asked;
 

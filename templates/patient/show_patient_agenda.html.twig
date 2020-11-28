@@ -10,7 +10,7 @@
     {{ parent() }}
 {% endblock %}
 {% block body %}
-    {% block navBar %}
+    {% block navigation_bar %}
         {{ parent() }}
     {% endblock %}
 
@@ -26,6 +26,9 @@
 </div>
 
     {% block javascripts %}
+        {% block javascript %}
+            {{ encore_entry_script_tags('show_patients_agenda') }}
+        {% endblock %}
         {% block javascript_cdns %}
             {{ parent() }}
             <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.js"></script>
@@ -53,10 +56,12 @@
                         //info.dayEl.style.backgroundColor = 'red';
                     },
                     eventClick: function(info) {
-                        alert('Event: ' + info.event.title);
-                        alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
-                        alert('View: ' + info.view.type);
-
+                        //alert('Event: ' + info.event.title);
+                        //alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+                        //alert('View: ' + info.view.type);
+                        window.location.href=viewPatientConsultation(info.event.id);
+                        //window.location.href = '';
+                        //alert(info.event.consultation_id);
                         // change the border color just for fun
                         //info.el.style.borderColor = 'red';
                     },
@@ -64,6 +69,7 @@
                     events: [
                         {% for consultation in consultations %}
                         {
+                            id: '{{ consultation.getId()|e }}',
                             allDay: 0,
                             title: '{{ consultation.getDoctorId()|e }}',
                             start: '{{ consultation.getDate()|date("Y-m-d H:00:s") }}',
@@ -78,8 +84,5 @@
 
         </script>
     {% endblock %}
-{% endblock %}
 
-{% block javascript %}
-    {{ encore_entry_script_tags('show_patients_agenda') }}
 {% endblock %}
