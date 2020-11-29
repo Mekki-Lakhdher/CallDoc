@@ -2,39 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8c150f1-129b-4619-84fb-2ef03fbe982f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/CanceledConsultation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/ChatRoom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/ChatRoomDisabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/ConfirmedConsultation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/PendingConsultation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/WebRTC/Zoom-Clone-With-WebRTC-master/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/migrations/Version20200831171709.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/migrations/Version20200831172125.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/migrations/Version20200909185323.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/migrations/Version20200910184508.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/migrations/Version20200913145529.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Controller/UserController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Security/EventListener/ActivityListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Security/EventListener/RequestListener.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/show_doctor_agenda.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/show_patient_agenda.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/show_profile.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/PendingConsultatio.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/AskForConsultation.png" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/public/img/AskForConsultation.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/.idea/CallDoc.iml" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/.idea/CallDoc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/config/routes.yaml" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/config/routes.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/config/services.yaml" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/config/services.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Controller/ConsultationController.php" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Controller/ConsultationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Controller/DoctorsController.php" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Controller/DoctorsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Controller/PatientsController.php" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Controller/PatientsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Entity/Consultation.php" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Entity/Consultation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Entity/User.php" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Repository/ConsultationRepository.php" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Repository/ConsultationRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/src/Repository/UserRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/base.html.twig" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/consultation_confirmation.html.twig" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/consultation_confirmation.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/patients.html.twig" afterPath="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/patients.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/public/img/CanceledConsultation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/public/img/ChatRoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/public/img/ChatRoomDisabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/public/img/ConfirmedConsultation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/public/img/PendingConsultation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/video_chat_module/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/migrations/Version20200831171709.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/migrations/Version20200831172125.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/migrations/Version20200909185323.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/migrations/Version20200910184508.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/migrations/Version20200913145529.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Controller/UserController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Security/EventListener/ActivityListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Security/EventListener/RequestListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/templates/show_doctor_agenda.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/templates/show_patient_agenda.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../my_project/docabins/templates/show_profile.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../my_project/docabins/public/img/PendingConsultatio.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/public/img/AskForConsultation.png" afterPath="$PROJECT_DIR$/../../my_project/docabins/public/img/AskForConsultation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/.idea/docabins.iml" afterPath="$PROJECT_DIR$/../../my_project/docabins/.idea/docabins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../my_project/docabins/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/config/routes.yaml" afterPath="$PROJECT_DIR$/../../my_project/docabins/config/routes.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/config/services.yaml" afterPath="$PROJECT_DIR$/../../my_project/docabins/config/services.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/src/Controller/ConsultationController.php" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Controller/ConsultationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/src/Controller/DoctorsController.php" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Controller/DoctorsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/src/Controller/PatientsController.php" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Controller/PatientsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/src/Entity/Consultation.php" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Entity/Consultation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/src/Entity/User.php" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/src/Repository/ConsultationRepository.php" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Repository/ConsultationRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/src/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/../../my_project/docabins/src/Repository/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/templates/base.html.twig" afterPath="$PROJECT_DIR$/../../my_project/docabins/templates/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/templates/consultation_confirmation.html.twig" afterPath="$PROJECT_DIR$/../../my_project/docabins/templates/consultation_confirmation.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../my_project/docabins/templates/patients.html.twig" afterPath="$PROJECT_DIR$/../../my_project/docabins/templates/patients.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +47,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="show_patient_agenda.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../sarah_project/CallDoc/templates/show_patient_agenda.html.twig">
+        <entry file="file://$PROJECT_DIR$/../../my_project/docabins/templates/show_patient_agenda.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
               <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
@@ -57,7 +57,7 @@
         </entry>
       </file>
       <file leaf-file-name="php.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../sarah_project/CallDoc/WebRTC/.idea/php.xml">
+        <entry file="file://$PROJECT_DIR$/../../my_project/docabins/video_chat_module/.idea/php.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -89,11 +89,11 @@
       <find>unpkg.com/peerjs.min.js.map</find>
     </findStrings>
     <dirStrings>
-      <dir>C:\Apache24\htdocs\TEST\Zoom-Clone-With-WebRTC-master</dir>
+      <dir>C:\Apache24\htdocs\my_project\docabins\video_chat_module</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../sarah_project/CallDoc" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../my_project/docabins" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -102,7 +102,7 @@
         <option value="$PROJECT_DIR$/views/room.ejs" />
         <option value="$PROJECT_DIR$/READ_ME.md" />
         <option value="$PROJECT_DIR$/public/script.js" />
-        <option value="$PROJECT_DIR$/../../sarah_project/CallDoc/templates/show_patient_agenda.html.twig" />
+        <option value="$PROJECT_DIR$/../../my_project/docabins/templates/show_patient_agenda.html.twig" />
       </list>
     </option>
   </component>
@@ -116,7 +116,7 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
-    <handled-path value="$PROJECT_DIR$/../../sarah_project/CallDoc/WebRTC/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../my_project/docabins/node_modules" />
   </component>
   <component name="PhpServers">
     <servers />
@@ -150,25 +150,25 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Zoom-Clone-With-WebRTC-master" />
+              <option name="myItemId" value="video_chat_module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CallDoc" />
+              <option name="myItemId" value="docabins" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Zoom-Clone-With-WebRTC-master" />
+              <option name="myItemId" value="video_chat_module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CallDoc" />
+              <option name="myItemId" value="docabins" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WebRTC" />
+              <option name="myItemId" value="video_chat_module" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -179,14 +179,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sarah_project/CallDoc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../my_project/docabins" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\WebRTC" />
+      <recent name="C:\Apache24\htdocs\my_project\docabins\video_chat_module" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Apache24\htdocs\sarah_project\CallDoc\WebRTC" />
+      <recent name="C:\Apache24\htdocs\my_project\docabins\video_chat_module" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -397,7 +397,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../sarah_project/CallDoc/.env">
+    <entry file="file://$PROJECT_DIR$/../../my_project/docabins/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -413,7 +413,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../sarah_project/CallDoc/templates/show_patient_agenda.html.twig">
+    <entry file="file://$PROJECT_DIR$/../../my_project/docabins/templates/show_patient_agenda.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
@@ -421,7 +421,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../sarah_project/CallDoc/WebRTC/.idea/php.xml">
+    <entry file="file://$PROJECT_DIR$/../../my_project/docabins/video_chat_module/.idea/php.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

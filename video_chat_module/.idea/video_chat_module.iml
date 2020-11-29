@@ -4,6 +4,6 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="CallDoc" />
+    <orderEntry type="module" module-name="video_chat_module" />
   </component>
 </module>

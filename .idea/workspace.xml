@@ -26,34 +26,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/doctors.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/doctors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/RepLog/RepLogApp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/RepLog/RepLogList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/RepLog/RepLogs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/rep_log_react.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/show_patients_agenda.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/show_patients_agenda.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ConsultationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConsultationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Consultation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Consultation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/HomePageContentFormType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ConsultationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ConsultationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctors.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctors.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/patient/patients.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient/patients.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/show_profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show_profile.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.idea/WebRTC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/READ_ME.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/public/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRTC/views/room.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,6 +216,8 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
@@ -242,9 +233,10 @@
     <property name="node.js.selected.package.standard" value="C:\Apache24\htdocs\my_project\docabins\node_modules\eslint" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -404,7 +396,12 @@
       <workItem from="1606467191798" duration="9715000" />
       <workItem from="1606488476365" duration="3079000" />
       <workItem from="1606510719389" duration="22000" />
-      <workItem from="1606555364272" duration="242000" />
+      <workItem from="1606555364272" duration="2395000" />
+      <workItem from="1606639098879" duration="2657000" />
+      <workItem from="1606645735198" duration="771000" />
+      <workItem from="1606654734993" duration="1198000" />
+      <workItem from="1606661891145" duration="5336000" />
+      <workItem from="1606682860534" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="24/08/2020">
       <created>1598303508962</created>
@@ -511,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605287722109</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="28-11-2020">
+      <created>1606556674595</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606556674596</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -551,7 +555,8 @@
     <MESSAGE value="06-11-2020" />
     <MESSAGE value="11-11-2020" />
     <MESSAGE value="13-11-2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="13-11-2020" />
+    <MESSAGE value="28-11-2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="28-11-2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="188" key="#Notifications" timestamp="1605390119132">
@@ -570,6 +575,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1605975848164" />
+    <state x="451" y="194" key="#com.intellij.tools.ToolEditorDialog" timestamp="1606683620522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="451" y="194" key="#com.intellij.tools.ToolEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1606683620522" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605553889072">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -578,22 +587,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="208" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1606207725792" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1605462430477">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1606556668609">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605462430477" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1606211686375">
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606556668609" />
+    <state x="100" y="55" key="DiffContextDialog" timestamp="1606555681617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606211686375" />
+    <state x="100" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1606555681617" />
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1606667517753">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606667517753" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1606667517753">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606667517753" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1606667517752">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606667517752" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1606667517753">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606667517753" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1606683627792">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606683627792" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606557048989">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606557048989" />
     <state x="473" y="226" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1605365222328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="473" y="226" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/0.0.1366.728@0.0.1366.728" timestamp="1605365222328" />
-    <state x="390" y="99" width="585" height="582" key="find.popup" timestamp="1606496402309">
+    <state x="390" y="99" width="585" height="582" key="find.popup" timestamp="1606640311134">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="99" width="585" height="582" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1606496402309" />
+    <state x="390" y="99" width="585" height="582" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1606640311134" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1605975717950">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,0 +1,1 @@
+{"base_url":"","routes":{"view_patient_consultation":{"tokens":[["variable","\/","[^\/]++","consultation_id",true],["text","\/view_patient_consultation"]],"defaults":[],"requirements":[],"hosttokens":[],"methods":[],"schemes":[]}},"prefix":"","host":"localhost","port":"","scheme":"http","locale":[]}
