@@ -2,6 +2,7 @@
 
 {% block title %}Consultations{% endblock %}
 {% block head %}
+    {{ parent() }}
     {% block stylesheets %}
         {{ parent() }}
         {#{{ encore_entry_link_tags('patient_consultations') }}#}
@@ -49,22 +50,27 @@
                 </form>
             </div>
 
+            <div class="d-flex justify-content-center">
+                {{ knp_pagination_render(patient_consultations) }}
+            </div>
+
+            {% if patient_consultations|length > 0 %}
             <div class="card-deck" style="height: 325px;margin-bottom: 25px;">
             {% for result in patient_consultations %}
-                {% if result.consultation_confirmed==0 and result.consultation_canceled==0 %}
+                {% if result.consultation_confirmed_by_doctor==0 and result.consultation_canceled_by_doctor==0 %}
                     {% set list_group_item_class= 'list-group-item-secondary' %}
-                {% elseif result.consultation_confirmed==1 and result.consultation_canceled==0 %}
+                {% elseif result.consultation_confirmed_by_doctor==1 and result.consultation_canceled_by_doctor==0 %}
                     {% set list_group_item_class= 'list-group-item-success' %}
-                {% elseif result.consultation_confirmed==0 and result.consultation_canceled==1 %}
+                {% elseif result.consultation_confirmed_by_doctor==0 and result.consultation_canceled_by_doctor==1 %}
                     {% set list_group_item_class= 'list-group-item-danger' %}
                 {% endif %}
                 <div class="card" style="max-width: 14.5rem;min-width: 14.5rem;" onmouseover="showConsultationButton('{{ result.consultation_id }}');" onmouseout="hideConsultationButton('{{ result.consultation_id }}');">
-                    {% if result.consultation_confirmed==0 and result.consultation_canceled==0 %}
+                    {% if result.consultation_confirmed_by_doctor==0 and result.consultation_canceled_by_doctor==0 %}
                         {% set con_status_class= 'bg-warning' %}{% set con_status= 'Pending' %}
-                    {% elseif result.consultation_confirmed==1 and result.consultation_canceled==0 %}
-                        {% set con_status_class= 'bg-success' %}{% set con_status= 'Confirmed' %}
-                    {% elseif result.consultation_confirmed==0 and result.consultation_canceled==1 %}
-                        {% set con_status_class= 'bg-danger' %}{% set con_status= 'Canceled' %}
+                    {% elseif result.consultation_confirmed_by_doctor==1 and result.consultation_canceled_by_doctor==0 %}
+                        {% set con_status_class= 'bg-success' %}{% set con_status= 'Confirmed by doctor' %}
+                    {% elseif result.consultation_confirmed_by_doctor==0 and result.consultation_canceled_by_doctor==1 %}
+                        {% set con_status_class= 'bg-danger' %}{% set con_status= 'Canceled by doctor' %}
                     {% endif %}
                     <div class="card-header {{ con_status_class }}">
                         <small class="">{{ con_status }}</small>
@@ -75,7 +81,7 @@
                         <p class="card-text">{{ result.consultation_description|length > 100 ? result.consultation_description|slice(0, 100) ~ '...' : result.consultation_description  }}</p>
                     </div>
                     <div class="card-footer" style="height: 60px;">
-                        <small class="text-muted align-middle">{{ result.consultation_date|date("Y-m-d H:00:s") }}</small>
+                        <small class="text-muted align-middle">{{ result.consultation_date|date("Y-m-d H:i:s") }}</small>
                         <a id="consultation_{{ result.consultation_id }}" class="align-middle" href="{{ path('view_patient_consultation',{ 'consultation_id': result.consultation_id}) }}" style="height: 35px;width: 35px;border-radius: 50%;display: none;float:right;">
                             <svg width="100%" height="100%" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="color: darkslategrey;">
                                 <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -84,13 +90,20 @@
                         </a>
                     </div>
                 </div>
-
             {% endfor %}
             </div>
 
-            <div class="d-flex justify-content-center">
-                {{ knp_pagination_render(patient_consultations) }}
+            {% else %}
+            <div class="d-flex justify-content-center" style="width: 100%;padding-top: 25px;">
+                <div class="alert alert-warning" role="alert" style="width: 25%;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                    </svg>
+                    &nbsp;&nbsp;&nbsp;No results found !
+                </div>
             </div>
+            {% endif %}
 
         </div>
 

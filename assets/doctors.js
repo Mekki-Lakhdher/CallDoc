@@ -12,7 +12,7 @@ function viewDoctorSchedule(doctor_id,doctor_first_name,doctor_last_name) {
         type: 'post',
         url: url,
         success: function (data) {
-            $('.modal-title').html("Schedule of doctor "+doctor_first_name+" "+doctor_last_name);
+            $('.modal-title').html("Ask "+doctor_first_name+" "+doctor_last_name+" for a consultation");
             $('.modal-body').html(data);
             $('#doctorSceduleModal').modal("show");
         }

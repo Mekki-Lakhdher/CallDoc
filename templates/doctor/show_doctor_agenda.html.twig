@@ -1,6 +1,6 @@
 {% extends "./base.html.twig" %}
 
-{% block title %}Profile{% endblock %}
+{% block title %}Doctor agenda{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('show_doctor_agenda') }}
@@ -46,17 +46,17 @@
                         right: 'dayGridMonth,timeGridWeek,timeGridDay'
                     },
                     dateClick: function(info) {
-                        alert('Clicked on: ' + info.dateStr);
-                        alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
-                        alert('Current view: ' + info.view.type);
+                        //alert('Clicked on: ' + info.dateStr);
+                        //alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+                        //alert('Current view: ' + info.view.type);
                         // change the day's background color just for fun
                         //info.dayEl.style.backgroundColor = 'red';
                     },
                     eventClick: function(info) {
-                        alert('Event: ' + info.event.title);
-                        alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
-                        alert('View: ' + info.view.type);
-
+                        //alert('Event: ' + info.event.title);
+                        //alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+                        //alert('View: ' + info.view.type);
+                        window.location.href=viewDoctorConsultation(info.event.id);
                         // change the border color just for fun
                         //info.el.style.borderColor = 'red';
                     },
@@ -70,7 +70,15 @@
                                 end: '{{ consultation.getDate()|date_modify("+1 hour")|date("Y-m-d H:00:s") }}',
                             },
                         {% endfor %}
-                    ]
+                    ],
+                    displayEventTime: false,
+                    slotLabelFormat: {
+                        hour12: false,
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        omitZeroMinute: false,
+                        meridiem: false,
+                    },
 
                 });
                 calendar.render();

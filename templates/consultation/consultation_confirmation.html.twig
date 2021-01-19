@@ -13,6 +13,12 @@
             {{ consultation.getDate()|date("D j M Y - G:i:s") }}
         </td>
     </tr>
+    <tr>
+        <th>Description</th>
+        <td>
+            {{ consultation.getDescription() }}
+        </td>
+    </tr>
 </table>
 
 {% set action = "consultation_decision/#{consultation_id}" %}
@@ -34,23 +40,38 @@
             <td>{{ form_widget(form.date) }}</td>
         </tr>
         <tr>
-            <td>Asked</td>
-            <td>{{ form_errors(form.asked) }}</td>
-            <td>{{ form_widget(form.asked,{'value' : 1}) }}</td>
+            <td>Asked by patient</td>
+            <td>{{ form_errors(form.asked_by_patient) }}</td>
+            <td>{{ form_widget(form.asked_by_patient,{'value' : 1}) }}</td>
         </tr>
         <tr>
-            <td>Confirmed</td>
-            <td>{{ form_errors(form.confirmed) }}</td>
-            <td>{{ form_widget(form.confirmed, {'value' : 0}) }}</td>
+            <td>Confirmed by doctor</td>
+            <td>{{ form_errors(form.confirmed_by_doctor) }}</td>
+            <td>{{ form_widget(form.confirmed_by_doctor, {'value' : 0}) }}</td>
         </tr>
         <tr>
-            <td>Canceled</td>
-            <td>{{ form_errors(form.canceled) }}</td>
-            <td>{{ form_widget(form.canceled, {'value' : 0}) }}</td>
+            <td>Canceled by doctor</td>
+            <td>{{ form_errors(form.canceled_by_doctor) }}</td>
+            <td>{{ form_widget(form.canceled_by_doctor, {'value' : 0}) }}</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>{{ form_errors(form.description) }}</td>
+            <td>{{ form_widget(form.description) }}</td>
         </tr>
     </table>
 
-<div class="modal-footer">
+{% if consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==0 %}
+    {% set show_decision_section=1 %}
+{% elseif consultation.getConfirmedByDoctor()==1 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==0 %}
+    {% set show_decision_section=0 %}
+{% elseif consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==1 and consultation.getCanceledByPatient()==0 %}
+    {% set show_decision_section=0 %}
+{% elseif consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==1 %}
+    {% set show_decision_section=0 %}
+{% endif %}
+
+<div class="modal-footer" {% if not show_decision_section %}style="display: none;"{% endif %} >
     {{ form_widget(form.confirm) }}
     {{ form_widget(form.cancel) }}
 </div>

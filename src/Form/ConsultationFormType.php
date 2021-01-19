@@ -21,10 +21,12 @@ class ConsultationFormType extends AbstractType
         $builder
             ->add('patient_id')
             ->add('doctor_id')
-            ->add('date')
-            ->add('asked')
-            ->add('confirmed')
-            ->add('canceled')
+            ->add('date',DateTimeType::class, [
+                'view_timezone' => 'Africa/Tunis',
+            ])
+            ->add('asked_by_patient')
+            ->add('confirmed_by_doctor')
+            ->add('canceled_by_doctor')
             ->add('confirm', SubmitType::class, ['label' => 'Confirm'])
             ->add('cancel', SubmitType::class, [
                 'label' => 'Cancel',

@@ -43,8 +43,11 @@ function fillDate (date_object) {
 }
 
 function fillHour (hour) {
+    var d = new Date();
+    var n = d.getTimezoneOffset();
+    var utc_hour=(parseFloat(hour) + parseFloat(n/60));
     addSelectedHourButtonBorder('btn_'+hour);
-    document.getElementById("consultation_form_date_time_hour").value=hour;
+    document.getElementById("consultation_form_date_time_hour").value=utc_hour;
 }
 
 function addSelectedHourButtonBorder (id) {
@@ -61,6 +64,5 @@ function addSelectedHourButtonBorder (id) {
     // Make button on top of other buttons
     document.getElementById(id).style.zIndex = 1;
 }
-
 window.fillDate=fillDate;
 window.fillHour=fillHour;

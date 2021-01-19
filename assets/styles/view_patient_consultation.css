@@ -1,0 +1,54 @@
+.container {
+	width:80%;
+	display:block;
+	margin-top: 10px;
+	margin-left: 100px;
+}
+
+.line {}
+
+.top,
+.bottom {
+	display: flex;
+	flex-direction: row;
+}
+
+.bottom {
+	padding-left: 10%;
+}
+
+.top .top-element,
+.bottom .bottom-element {
+	padding: 0 25px;
+	position: relative;
+
+}
+
+.top-element:before {
+	bottom: -63px;
+}
+
+.bottom-element:before {
+	top: -63px;
+}
+
+.top-element:after,
+.bottom-element:after {
+	content: "";
+	height: 75px;
+	width: 5px;
+	background: #8ACCC6;
+	position: absolute;
+	border: 1px solid darkgrey;
+	border-radius: 5px;
+}
+
+.top-element:after {
+	left: 10px;
+	bottom: -40px;
+}
+
+.bottom-element:after {
+	left: 10px;
+	top: -40px;
+}

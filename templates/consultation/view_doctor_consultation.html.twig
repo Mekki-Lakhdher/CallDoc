@@ -1,0 +1,134 @@
+{% extends "./base.html.twig" %}
+
+{% block title %}Doctor consultation{% endblock %}
+{% block head %}
+    {{ parent() }}
+    {% block stylesheets %}
+        {{ parent() }}
+        {{ encore_entry_link_tags('view_doctor_consultation') }}
+    {% endblock %}
+{% endblock %}
+{% block body %}
+    {% block navigation_bar %}
+        {{ parent() }}
+    {% endblock %}
+
+    <div class="bg-light main_div">
+        <div class="jumbotron bg-light">
+
+            {% if consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==0 %}
+                {% set con_status_class= 'bg-warning' %}{% set con_status= 'Pending' %}{% set con_btn_status= "" %}{% set con_timeline_color= "#00ff55" %}{% set con_timeline_image= "img/PendingConsultation.png" %}
+            {% elseif consultation.getConfirmedByDoctor()==1 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==0 %}
+                {% set con_status_class= 'bg-success' %}{% set con_status= 'Confirmed' %}{% set con_btn_status= "disabled='true'" %}{% set con_timeline_color= "#00cc44" %}{% set con_timeline_image= "img/ConfirmedConsultation.png" %}
+            {% elseif consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==1 and consultation.getCanceledByPatient()==0 %}
+                {% set con_status_class= 'bg-danger' %}{% set con_status= 'Canceled' %}{% set con_btn_status= "disabled='true'" %}{% set con_timeline_color= "#00ff55" %}{% set con_timeline_image= "img/CanceledConsultation.png" %}
+            {% elseif consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==1 %}
+                {% set con_status_class= 'bg-danger' %}{% set con_status= 'Canceled' %}{% set con_btn_status= "disabled='true'" %}{% set con_timeline_color= "#00ff55" %}{% set con_timeline_image= "img/CanceledConsultation.png" %}
+            {% endif %}
+
+            <div class="card" style="">
+                <div class="card-header {{ con_status_class }}">
+                    <h5 class="">{{ con_status }} consultation</h5>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">{{ consultation.getPatientId|e }}</h5>
+                    <p class="card-text">
+                        {{ consultation.getDescription }}
+                    <div id="new_consultation_description">
+                        {{ form_widget(form.description) }}
+                        {{ form_errors(form.description) }}
+                    </div>
+
+                    </p>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Timeline
+                    </h5>
+                    <p class="card-text">
+                        <div class="container">
+
+                        <div class="top">
+                            <div class="top-element">
+                                Asked by patient</br>{{ consultation.getAskedByPatientAt|date("m/d/Y H:i") }}
+                            </div>
+                            {% if consultation.getCanceledByDoctor() %}
+                                <div class="top-element">
+                                    Canceled by you</br>{{ consultation.getCanceledByDoctorAt|date("m/d/Y H:i") }}
+                                </div>
+                            {% endif %}
+                            {%  if consultation.getConfirmedByDoctor() %}
+                                <div class="top-element">
+                                    Confirmed by you</br>{{ consultation.getConfirmedByDoctorAt|date("m/d/Y H:i") }}
+                                </div>
+                            {% endif %}
+                            {% if consultation.getCanceledByPatient() %}
+                                <div class="top-element">
+                                    Canceled by patient</br>{{ consultation.getCanceledByPatientAt|date("m/d/Y H:i") }}
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="width: 95%;">
+                                    <div class="{{ con_status_class }}" style="height: 5px;margin: 50px 0;width: 100%;border-radius: 10px;border: 1px solid darkgrey;"></div>
+                                </td>
+                                <td style="width: 5%;text-align: center;">
+                                    <img src="{{ asset(con_timeline_image) }}">
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    </p>
+                </div>
+
+                <div class="card-footer" style="">
+                    {{ consultation.date|date("Y-m-d H:00:s") }}
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="Third group" style="min-width: 250px;">
+                    <button type="button" class="btn btn-dark" style="min-width: 250px;" onclick="joinChatRoom('{{ consultation.id }}');">
+                        Go to chat room
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-video-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#edit_consultation_button").click(function(){
+                    $("#new_consultation_description").slideDown("slow");
+                    $("#new_consultation_date").slideDown("slow");
+                    $("#new_consultation_buttons").slideDown("slow");
+                });
+                $("#cancel_edit_consultation_button").click(function(){
+                    $("#new_consultation_description").slideUp("slow");
+                    $("#new_consultation_date").slideUp("slow");
+                    $("#new_consultation_buttons").slideUp("slow");
+                });
+            });
+        </script>
+        <style>
+            #new_consultation_description {text-align: left;display: none;}
+        </style>
+    </div>
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('view_patient_consultation') }}
+    {% endblock %}
+
+    {{ form_end(form) }}
+
+{% endblock %}

@@ -20,12 +20,12 @@ final class Version20200830171538 extends AbstractMigration
     public function up(Schema $schema) : void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE consultation ADD canceled INT NOT NULL');
+        $this->addSql('ALTER TABLE consultation ADD canceled_by_doctor INT NOT NULL');
     }
 
     public function down(Schema $schema) : void
     {
         // this down() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE consultation DROP canceled');
+        $this->addSql('ALTER TABLE consultation DROP canceled_by_doctor');
     }
 }

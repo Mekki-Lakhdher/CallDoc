@@ -10,7 +10,7 @@ function viewPendingConsultation (consultation_id) {
         type: 'post',
         url: url,
         success: function (data) {
-            $('.modal-title').html("Pending consultation");
+            $('.modal-title').html("Consultation details");
             $('.modal-body').html(data);
             $('#consultationConfirmationModal').modal("show");
         }

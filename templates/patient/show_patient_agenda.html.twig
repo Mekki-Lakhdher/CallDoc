@@ -1,6 +1,6 @@
 {% extends "./base.html.twig" %}
 
-{% block title %}Profile{% endblock %}
+{% block title %}Patient agenda{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('show_patients_agenda') }}
@@ -49,9 +49,9 @@
                         right: 'dayGridMonth,timeGridWeek,timeGridDay'
                     },
                     dateClick: function(info) {
-                        alert('Clicked on: ' + info.dateStr);
-                        alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
-                        alert('Current view: ' + info.view.type);
+                        //alert('Clicked on: ' + info.dateStr);
+                        //alert('Coordinates: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+                        //alert('Current view: ' + info.view.type);
                         // change the day's background color just for fun
                         //info.dayEl.style.backgroundColor = 'red';
                     },
@@ -70,13 +70,22 @@
                         {% for consultation in consultations %}
                         {
                             id: '{{ consultation.getId()|e }}',
-                            allDay: 0,
+                            allDay: false,
                             title: '{{ consultation.getDoctorId()|e }}',
                             start: '{{ consultation.getDate()|date("Y-m-d H:00:s") }}',
                             end: '{{ consultation.getDate()|date_modify("+1 hour")|date("Y-m-d H:00:s") }}',
                         },
                         {% endfor %}
-                    ]
+                    ],
+                    displayEventTime: false,
+                    slotLabelFormat: {
+                        hour12: false,
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        omitZeroMinute: false,
+                        meridiem: false,
+                    },
+
 
                 });
                 calendar.render();

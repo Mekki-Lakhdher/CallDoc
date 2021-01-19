@@ -28,3 +28,5 @@ Data exchange between 8000 and 3000 (localhost).
 Generate ssl certificate for the site to enable https connection and then enable access for media from other devices.
 
 Front end framework.
+
+Generalize the users timezones : Search for 'Africa/Tunis' in the whole application.

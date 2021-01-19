@@ -41,7 +41,7 @@ class PatientController extends AbstractController
         // Get all dates
         $repository = $this->getDoctrine()
             ->getRepository(Consultation::class);
-        $asked_consultations = $repository->findAll();
+        $asked_by_patient_consultations = $repository->findAll();
 
         $repository = $this->getDoctrine()
             ->getRepository(User::class);
@@ -55,7 +55,7 @@ class PatientController extends AbstractController
         return $this->render('patient/patients.html.twig', [
             'patients' => $patients,
             'patient_name' => $patient_name,
-            'asked_consultations' => $asked_consultations,
+            'asked_by_patient_consultations' => $asked_by_patient_consultations,
         ]);
 
     }

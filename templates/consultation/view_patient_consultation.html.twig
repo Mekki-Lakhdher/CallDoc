@@ -2,8 +2,10 @@
 
 {% block title %}Patient consultation{% endblock %}
 {% block head %}
+    {{ parent() }}
     {% block stylesheets %}
         {{ parent() }}
+        {{ encore_entry_link_tags('view_patient_consultation') }}
     {% endblock %}
 {% endblock %}
 {% block body %}
@@ -29,19 +31,19 @@
             <td></td>
         </tr>
         <tr>
-            <td>Asked</td>
-            <td>{{ form_errors(form.asked) }}</td>
-            <td>{{ form_widget(form.asked,{'value' : 1}) }}</td>
+            <td>Asked by patient</td>
+            <td>{{ form_errors(form.asked_by_patient) }}</td>
+            <td>{{ form_widget(form.asked_by_patient,{'value' : 1}) }}</td>
         </tr>
         <tr>
-            <td>Confirmed</td>
-            <td>{{ form_errors(form.confirmed) }}</td>
-            <td>{{ form_widget(form.confirmed, {'value' : consultation.confirmed}) }}</td>
+            <td>Confirmed by doctor</td>
+            <td>{{ form_errors(form.confirmed_by_doctor) }}</td>
+            <td>{{ form_widget(form.confirmed_by_doctor, {'value' : consultation.getConfirmedByDoctor()}) }}</td>
         </tr>
         <tr>
-            <td>Canceled</td>
-            <td>{{ form_errors(form.canceled) }}</td>
-            <td>{{ form_widget(form.canceled, {'value' : consultation.canceled}) }}</td>
+            <td>Canceled by doctor</td>
+            <td>{{ form_errors(form.canceled_by_doctor) }}</td>
+            <td>{{ form_widget(form.canceled_by_doctor, {'value' : consultation.getCanceledByDoctor()}) }}</td>
         </tr>
         <tr>
             <td colspan="3">
@@ -50,31 +52,80 @@
             </td>
         </tr>
     </table>
+
     <div class="bg-light main_div">
         <div class="jumbotron bg-light">
-            {% if consultation.confirmed==0 and consultation.canceled==0 %}
-                {% set con_status_class= 'bg-warning' %}{% set con_status= 'Pending' %}{% set con_btn_status= "" %}
-            {% elseif consultation.confirmed==1 and consultation.canceled==0 %}
-                {% set con_status_class= 'bg-success' %}{% set con_status= 'Confirmed' %}{% set con_btn_status= "disabled='true'" %}
-            {% elseif consultation.confirmed==0 and consultation.canceled==1 %}
-                {% set con_status_class= 'bg-danger' %}{% set con_status= 'Canceled' %}{% set con_btn_status= "disabled='true'" %}
+
+            {% if consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==0 %}
+                {% set con_status_class= 'bg-warning' %}{% set con_status= 'Pending' %}{% set chat_room_accessible=0 %}{% set con_cancel_possible=1 %}{% set con_btn_status= "" %}{% set con_timeline_color= "#00ff55" %}{% set con_timeline_image= "img/PendingConsultation.png" %}
+            {% elseif consultation.getConfirmedByDoctor()==1 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==0 %}
+                {% set con_status_class= 'bg-success' %}{% set con_status= 'Confirmed' %}{% set chat_room_accessible=1 %}{% set con_cancel_possible=1 %}{% set con_btn_status= "disabled='true'" %}{% set con_timeline_color= "#00cc44" %}{% set con_timeline_image= "img/ConfirmedConsultation.png" %}
+            {% elseif consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==1 and consultation.getCanceledByPatient()==0 %}
+                {% set con_status_class= 'bg-danger' %}{% set con_status= 'Canceled' %}{% set chat_room_accessible=0 %}{% set con_cancel_possible=0 %}{% set con_btn_status= "disabled='true'" %}{% set con_timeline_color= "#00ff55" %}{% set con_timeline_image= "img/CanceledConsultation.png" %}
+            {% elseif consultation.getConfirmedByDoctor()==0 and consultation.getCanceledByDoctor()==0 and consultation.getCanceledByPatient()==1 %}
+                {% set con_status_class= 'bg-danger' %}{% set con_status= 'Canceled' %}{% set chat_room_accessible=0 %}{% set con_cancel_possible=0 %}{% set con_btn_status= "disabled='true'" %}{% set con_timeline_color= "#00ff55" %}{% set con_timeline_image= "img/CanceledConsultation.png" %}
             {% endif %}
+
             <div class="card" style="">
                 <div class="card-header {{ con_status_class }}">
                     <h5 class="">{{ con_status }} consultation</h5>
                 </div>
 
                 <div class="card-body">
-                    <h5 class="card-title">{{ consultation.getDoctorId|e }}</h5>
+                    <h5 class="card-title">Dr. {{ consultation.getDoctorId|e }}</h5>
                     <p class="card-text">
                         {{ consultation.getDescription }}
-                        <div id="new_consultation_description">
-                            {{ form_widget(form.description) }}
-                            {{ form_errors(form.description) }}
-                        </div>
+                    <div id="new_consultation_description">
+                        {{ form_widget(form.description) }}
+                        {{ form_errors(form.description) }}
+                    </div>
 
                     </p>
                 </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Timeline
+                    </h5>
+                    <p class="card-text">
+                        <div class="container">
+
+                        <div class="top">
+                            <div class="top-element">
+                                Asked by you</br>{{ consultation.getAskedByPatientAt|date("m/d/Y H:i") }}
+                            </div>
+                            {% if consultation.getCanceledByDoctor() %}
+                                <div class="top-element">
+                                    Canceled by doctor</br>{{ consultation.getCanceledByDoctorAt|date("m/d/Y H:i") }}
+                                </div>
+                            {% endif %}
+                            {%  if consultation.getConfirmedByDoctor() %}
+                                <div class="top-element">
+                                    Confirmed by doctor</br>{{ consultation.getConfirmedByDoctorAt|date("m/d/Y H:i") }}
+                                </div>
+                            {% endif %}
+                            {% if consultation.getCanceledByPatient() %}
+                                <div class="top-element">
+                                    Canceled by you</br>{{ consultation.getCanceledByPatientAt|date("m/d/Y H:i") }}
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="width: 95%;">
+                                    <div class="{{ con_status_class }}" style="height: 5px;margin: 50px 0;width: 100%;border-radius: 10px;border: 1px solid darkgrey;"></div>
+                                </td>
+                                <td style="width: 5%;text-align: center;">
+                                    <img src="{{ asset(con_timeline_image) }}">
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    </p>
+                </div>
+
                 <div class="card-footer" style="">
                     {{ consultation.date|date("Y-m-d H:00:s") }}
                     <div id="new_consultation_date">
@@ -97,14 +148,14 @@
                                 </button>
                             </div>
                             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                                <button id="cancel_edit_consultation_button" type="button" class="btn btn-outline-danger" style="min-width: 125px;">
+                                <a id="cancel_edit_consultation_button" type="button" class="btn btn-outline-danger" style="min-width: 125px;">
                                     Cancel
                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-journal-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
                                         <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
                                         <path fill-rule="evenodd" d="M6.146 6.146a.5.5 0 0 1 .708 0L8 7.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 8l1.147 1.146a.5.5 0 0 1-.708.708L8 8.707 6.854 9.854a.5.5 0 0 1-.708-.708L7.293 8 6.146 6.854a.5.5 0 0 1 0-.708z"/>
                                     </svg>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -124,16 +175,26 @@
                     </button>
                 </div>
                 <div class="btn-group mr-2" role="group" aria-label="Second group">
-                    <button type="button" class="btn btn-danger" style="min-width: 125px;">
-                        Cancel
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                        </svg>
-                    </button>
+                    {% if con_cancel_possible %}
+                        <a type="button" class="btn btn-danger" style="min-width: 125px;" href="{{ path('cancel_patient_consultation', { 'consultation_id': consultation_id }) }}">
+                            Cancel
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg>
+                        </a>
+                    {% else %}
+                        <button disabled="true" class="btn btn-danger" style="min-width: 125px;">
+                            Cancel
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg>
+                        </button>
+                    {% endif %}
                 </div>
                 <div class="btn-group mr-2" role="group" aria-label="Third group" style="min-width: 250px;">
-                    <button type="button" class="btn btn-dark" style="min-width: 250px;" onclick="joinChatRoom('{{ consultation.id }}');">
+                    <button {% if not chat_room_accessible %} disabled="true" {% endif %}  type="button" class="btn btn-dark" style="min-width: 250px;" onclick="joinChatRoom('{{ consultation.id }}');">
                         Go to chat room
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-video-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>

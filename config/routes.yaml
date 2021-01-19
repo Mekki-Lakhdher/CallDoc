@@ -61,6 +61,16 @@ view_patient_consultation:
     options:
         expose: true
 
+view_doctor_consultation:
+    path: /view_doctor_consultation/{consultation_id}
+    controller: App\Controller\ConsultationController::viewDoctorConsultationAction
+    options:
+        expose: true
+
 edit_patient_consultation:
     path: /edit_patient_consultation/{consultation_id}
     controller: App\Controller\ConsultationController::editPatientConsultationAction
+
+cancel_patient_consultation:
+    path: /cancel_patient_consultation/{consultation_id}
+    controller: App\Controller\ConsultationController::cancelPatientConsultationAction

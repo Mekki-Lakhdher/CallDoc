@@ -26,6 +26,7 @@ class ConsultationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $consultation = $form->getData();
             $entityManager = $this->getDoctrine()->getManager();
+            $consultation->setAskedByPatientAt(new \DateTime());
             $entityManager->persist($consultation);
             $entityManager->flush();
         }
@@ -64,6 +65,8 @@ class ConsultationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $consultation = $form->getData();
             $entityManager = $this->getDoctrine()->getManager();
+            if ($consultation->getConfirmedByDoctor()){$consultation->setConfirmedByDoctorAt(new \DateTime());}
+            if ($consultation->getCanceledByDoctor()){$consultation->setCanceledByDoctorAt(new \DateTime());}
             $entityManager->persist($consultation);
             $entityManager->flush();
         }
@@ -71,24 +74,52 @@ class ConsultationController extends AbstractController
         return $this->redirectToRoute('patients');
     }
 
-    public function getDoctorConsultationsAction(Request $request)
+    public function getDoctorConsultationsAction(Request $request,PaginatorInterface $paginator)
     {
-        return $this->render('consultation/.html.twig', [
-            'consultation_id' => 1,
+        // Initialize $patient_name
+        $patient_name="";
+        // If $patient_name is set for the first time
+        if (isset($_POST['patient_name']))
+        {
+            $patient_name=$_POST['patient_name'];
+            $_SESSION['patient_name']=$patient_name;
+        }
+        // If $patient_name is already set
+        if (isset($_SESSION['patient_name']))
+        { $doctor_name=$_SESSION['patient_name']; }
+
+        // Get logged user_id
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        $connected_doctor=$user->getId();
+
+        // Get all consultations
+        $repository = $this->getDoctrine()
+            ->getRepository(Consultation::class);
+        $data = $repository->findDoctorConsultationsBy($connected_doctor,$patient_name);
+
+        $doctor_consultations = $paginator->paginate(
+            $data,
+            $request->query->getInt('page', 1),
+            5
+        );
+
+        return $this->render('consultation/doctor_consultations.html.twig', [
+            'doctor_consultations' => $doctor_consultations,
+            'patient_name' => $patient_name,
         ]);
     }
 
     public function getPatientConsultationsAction(Request $request,PaginatorInterface $paginator)
     {
-        // Initialize $patient_name
+        // Initialize $doctor_name
         $doctor_name="";
-        // If $patient_name is set for the first time
+        // If $doctor_name is set for the first time
         if (isset($_POST['doctor_name']))
         {
            $doctor_name=$_POST['doctor_name'];
             $_SESSION['doctor_name']=$doctor_name;
         }
-        // If $patient_name is already set
+        // If $doctor_name is already set
         if (isset($_SESSION['doctor_name']))
         {
             $doctor_name=$_SESSION['doctor_name'];
@@ -101,7 +132,7 @@ class ConsultationController extends AbstractController
         // Get all consultations
         $repository = $this->getDoctrine()
             ->getRepository(Consultation::class);
-        $data = $repository->findConsultationsBy($connected_patient,$doctor_name);
+        $data = $repository->findPatientConsultationsBy($connected_patient,$doctor_name);
 
         $patient_consultations = $paginator->paginate(
             $data,
@@ -133,6 +164,24 @@ class ConsultationController extends AbstractController
         ]);
     }
 
+    public function viewDoctorConsultationAction(int $consultation_id,Request $request)
+    {
+        $consultation = $this->getDoctrine()
+            ->getRepository(Consultation::class)
+            ->find($consultation_id);
+
+        $form = $this->createForm(ConsultationFormType::class, $consultation);
+
+        return $this->render('consultation/view_doctor_consultation.html.twig', [
+            'consultation' => $consultation,
+            'form' => $form->createView(),
+            'consultation_id' => $consultation_id,
+            'choices'  => [
+                'id' => $consultation_id,
+            ],
+        ]);
+    }
+
     public function editPatientConsultationAction(int $consultation_id,Request $request) {
         $consultation = $this->getDoctrine()
             ->getRepository(Consultation::class)
@@ -148,6 +197,30 @@ class ConsultationController extends AbstractController
         }
         // Add flash message
         $this->addFlash('success', 'Consultation edited.');
+        // Redirect to patients page after saving
+        return $this->redirectToRoute('patient_consultations');
+
+    }
+
+    public function cancelPatientConsultationAction(int $consultation_id,Request $request) {
+
+        // Load the concerned consultation
+        $entityManager = $this->getDoctrine()->getManager();
+        $consultation = $entityManager->getRepository(Consultation::class)->find($consultation_id);
+
+        // If consultation doesn't exist
+        if (!$consultation) {
+            throw $this->createNotFoundException(
+                'No product found for id '.$consultation
+            );
+        }
+        $consultation->setCanceledByPatient(1);
+        $consultation->setCanceledByPatientAt(new \DateTime());
+        $entityManager->persist($consultation);
+        $entityManager->flush();
+
+        // Add flash message
+        $this->addFlash("success", 'Consultation canceled.');
         // Redirect to patients page after saving
         return $this->redirectToRoute('patient_consultations');
 

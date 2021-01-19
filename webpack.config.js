@@ -37,7 +37,9 @@ Encore
     .addEntry('login', './assets/login.js')
     .addEntry('show_profile', './assets/show_profile.js')
     .addEntry('patient_consultations', './assets/patient_consultations.js')
+    .addEntry('doctor_consultations', './assets/doctor_consultations.js')
     .addEntry('view_patient_consultation', './assets/view_patient_consultation.js')
+    .addEntry('view_doctor_consultation', './assets/view_doctor_consultation.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

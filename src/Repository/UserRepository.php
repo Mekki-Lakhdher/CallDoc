@@ -74,8 +74,9 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
                 `phone_number`,
                 `email`,
                 `consultation`.`id` as `consultation_id`,
-                `consultation`.`confirmed`,
-                `consultation`.`canceled`
+                `consultation`.`confirmed_by_doctor`,
+                `consultation`.`canceled_by_doctor`,
+                `consultation`.`canceled_by_patient`
                 FROM `user`               
                 LEFT JOIN `consultation`             
                 ON `user`.`id`=`consultation`.`patient_id_id` AND `consultation`.`doctor_id_id`=:doctor_id               
@@ -85,8 +86,6 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         if ($patient_name!="") {
             $sql=$sql." AND `user`.`first_name` LIKE'%$patient_name%' OR `user`.`last_name` LIKE'%$patient_name%'";
         }
-
-
 
         $stmt = $conn->prepare($sql);
         $stmt->execute(['doctor_id' => $doctor_id]);
