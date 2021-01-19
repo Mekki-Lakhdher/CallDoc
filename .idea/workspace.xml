@@ -1,54 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52d38ce6-c912-4c6f-9dec-af992766e063" name="Default" comment="29-11-2020">
-      <change afterPath="$PROJECT_DIR$/assets/doctor_consultations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/view_doctor_consultation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/view_patient_consultation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/view_doctor_consultation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20200813122000.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201229100601.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/consultation/view_doctor_consultation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13588877-a573-4430-ab35-eb5db774fd7e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13588877-a573-4430-ab35-eb5db774fd7e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/docabins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docabins.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="52d38ce6-c912-4c6f-9dec-af992766e063" name="Default" comment="19-01-2021">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TO_DO" beforeDir="false" afterPath="$PROJECT_DIR$/TO_DO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/consultation_confirmation.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/consultation_confirmation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/doctor_schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/doctor_schedule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/doctors.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/doctors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/patients.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/patients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/show_doctor_agenda.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/show_doctor_agenda.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/view_patient_consultation.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/view_patient_consultation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200824201743.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200824201743.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200830171538.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200830171538.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200913145529.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200913145529.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201006222053.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201007141613.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201109175052.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201109175052.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201115125101.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201115125101.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/patients.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/patients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ConsultationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConsultationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PatientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PatientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Consultation.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Consultation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ConsultationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ConsultationFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ConsultationRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ConsultationRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultation/consultation_confirmation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultation/consultation_confirmation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultation/doctor_consultations.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultation/doctor_consultations.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultation/patient_consultations.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultation/patient_consultations.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/consultation/view_patient_consultation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultation/view_patient_consultation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctor_schedule.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctors.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctors.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/show_doctor_agenda.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/patient/patients.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient/patients.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/patient/show_patient_agenda.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +388,7 @@
       <workItem from="1610877044908" duration="13147000" />
       <workItem from="1610963179152" duration="7227000" />
       <workItem from="1611051730318" duration="1196000" />
-      <workItem from="1611055293404" duration="208000" />
+      <workItem from="1611055293404" duration="1030000" />
     </task>
     <task id="LOCAL-00001" summary="24/08/2020">
       <created>1598303508962</created>
@@ -555,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606684184091</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="19-01-2021">
+      <created>1611055823506</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611055823506</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -597,7 +558,8 @@
     <MESSAGE value="13-11-2020" />
     <MESSAGE value="28-11-2020" />
     <MESSAGE value="29-11-2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="29-11-2020" />
+    <MESSAGE value="19-01-2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="19-01-2021" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="188" key="#Notifications" timestamp="1609236740958">
@@ -636,10 +598,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="430" y="208" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1606207725792" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1606684181137">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1611055818423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1606684181137" />
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611055818423" />
     <state x="166" y="108" key="DiffContextDialog" timestamp="1606684128449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -668,10 +630,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="404" y="105" width="540" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1609250568629" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606684202019">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611055844496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606684202019" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611055844496" />
     <state x="473" y="226" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1605365222328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
